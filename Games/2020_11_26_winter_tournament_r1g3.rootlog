@@ -1,0 +1,61 @@
+// Root Winter Tournament - Round 1, Group 3
+// Played: 26 November 2020.  
+// https://www.youtube.com/watch?v=ktG3syvVqo8
+
+// Commentary
+
+// This game turns into a 3v1, with the two Vagabonds forming a chain of Coalitions with the Cats against the Moles. Patrick Leder was spectating. There was lots of joking table-talk throughout suggesting that a 3v1 Coalition be formed, especially because of how interesting or entertaining it would be. All in all, this is a very strange and interesting game. Updated for Rootlog V2.4.
+
+Map: Mountain
+Deck: Standard
+Clearings: R1, M2, R3, F4, M5, M6, F7, R8, F9, F10, R11, M12
+Pool: CDVAG
+V: Billy
+G: Drew
+C: Punjaberino
+D: Marcus the Cat
+
+C:t_k->1/w->1+2+4+5+6+7+8+9+10+11+12/b_s+b_w->1/b_r->9
+G:#tinker->$/p->10_11_12
+V:#harrier->$/p->10_11_12
+D:t->3/2w->3+6+11
+
+D:w->0/2w11->10/w6->2/(2M+F)#^/#brigadier->$/++2/#->D/++ // Starting Smol Moles.
+C:t->1/t1->/b_r->9/++/2w->9/w4->12/2w9->10/#->C/++
+G:p->12/%r->e/%b12->t/++/%h->e/Z%t/++2/%t->t/#->G
+V:p->10/%r->e/%h10->$/++/Z%x/++/%x->e/Dw10->/$_D->h/%s->e/XD10/Dw10->/++/%xe->d/2#->V
+
+D:2w->0/F#D->/t->10/3w0->10/XV10/w10->/(%c+%x)V$->d/XV10/w10->/%sV$->d/(2M+F)#^/#mayor->$/++2/#->D
+C:t->1/t1->/b_w->8/++2/XG12/(%b+%t)G$->d/2w->9/#->C/++
+G:%h+%r->r/p->9/%r->e/%s9->$/++/%h->e/%fd->s/%f->e/p->1/#->G // Vagabond refreshes in Birdsong were often guessed, since not all were said aloud or shown onscreen.
+V:%r+%h->r/p->9/%r->e/%f9->$/++/%h->e/Z%b/++/%f->e/F#domV->/5_9->/++/%f->e/p->1/#->V
+
+D:3w->0/3w0->10/w10->9/XC10/F#C->/3Cw10->1/2w10->/(2F+2M)#^/#baronofdirt->$/++3/++
+C:t->1/Zbank/t1->/b_s->12/++/2w->9/XG1/w1->/G$_C->h/(%s+%b)G$->d/#->C
+G:%r+%b+%h->r/p->9/R#domG->/8_9->/++/%h->e/%sd->s/%r->e/F#foxfolksteel->G/#->G
+V:%f+%r+%h->r/p->9/%h->e/Zarmor/%f->e/M#domV->/11_12->/++/%r->e/%f12->$/#->V
+
+D:3w->0/3w0->10/3w10->12/XV12/(2%f+%r+%h)V$->d/XC12/(2Cw+Cb_s+w)12->/++/F#D->/3_7->/++/3#^/#banker->$/++2/#->D/++ // Sway happened offscreen, not sure which cards were revealed.
+C:#->C+V/t->1/t1->/b_s->9/++/2w->9/XD9/B#C->/XD9/Dw9->/#->C
+G:%h+%r->r/p->10/%r->e/%h10->$/++/Z%s/++2/%s->e/(Dw+Dt)10->/$_D->h/++2/%r->d/#->G
+V:p->10_11_12/%_d->s+r/2#->V
+
+D:2w->0/B#D->/t+2w0->12/4w12->10/XG10B@/3Dw10->/(%s+%h)G$->d/2M#D->/++2/2F#^/#marshal->$/++/F#D->/6_11->/++/#->D
+C:#->C+V/t->1+9/Z%c/++3/R#C->/2_5->/++/2w9->12/3w9->10/XD12/Dt12->/++/t1+t9->/b_r->12/++2/B#C->/XD10/(Dw+w)10->/2#->C
+G:p->10_11_12/%_d->s+r/#->G
+V:p->11/%h->e/R#V->C/%cC$->$/$_C->1/++/%c->t/%r->e/%s11->$/R#V->/R#dom->V/R#domV->$/++->G$/2%f->e/p->3/%s->e/XD3/(Dw+Dt)3->/%h->d/2#->V/2#V-> // So it begins.
+
+D:2w->0/M#D->/t+2w0->2/3w2->5/3w5->9/XC9/Cw9->/XC9/(Cw+Cb_s)9->/++/#->D
+C:#->C+G/t->1/Zcommand/w->12/2w->9/w12+w10->9/XD9/F#C->/2w9->1/3Dw9->/B#domC->/XD2/Dt2->/++/B#C->/t1->/b_s->9/++/2#->C
+G:p->11/%r->e/++/%s->e/XC11/Cw11->/++/B#G->/B#dom->G/B#domG->$/++->C$/$_C->0/%f->e/p->10/2%h->e/Z%s/#->G // V took 2 boots from the ruins, so the table ruled G couldn't take this second bag, and that no other changes would be made. Also, the 3v1 is formed.
+V:%h+%r->r/p->7/%x->e/Dw7->/%r->e/p->6/%x->e/Dw6->/#->V
+
+D:3w->0/#->D // :(
+C:#->C+V/t->1+9/Z%f/++/t1+t9->/b_s->12/++2/2M#C->/2t->12/B#C->/2t12->/b_w->2/++2/++/2#->C
+G:%h+%r+%s+%f->r/p->9/%r->e/#royal->G/2%h->e/2#G->C/$_C->1/#->G // Probably aided with Bird cards.
+V:2%x+%r->r/p->11/%f->e/p->12/%r+2%x->e/3#V->C/$_C->2/3#->V // Same here. Also, the actual relationship marker was not moved to 2.
+
+D:2w->0/F#D->/t+4w0->9/w0->9/XC9F@/2w9->/F#C->/2Cw9->1/XC9/2Cb_r->9/++2/3w9->0/R#D->/++/#->D
+C:#->C+G/t->1+9+12/Z%f/++/Z%t/++2/t1+t9+t12->/b_w->6/++3/(M+R+B+F)#C->/t->1+9+12/B#C->/t1+t9+t12->/b_s->2/++4
+
+Winner: CGV // Likely the only three-player win we'll see in a Root tournament.

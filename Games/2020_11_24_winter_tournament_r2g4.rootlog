@@ -1,0 +1,52 @@
+// Root Winter Tournament - Round 2, Group 4
+// Played 24 Nov 2020.  
+// https://www.twitch.tv/videos/814521286
+
+// Updated for Rootlog V2.4.
+
+Map: Fall
+Deck: E&P
+Pool: CDOPA
+A: Guerric
+P: Justin
+O: Billy
+C: Edu
+
+C:t_k->2/b_s->2/b_r->10/b_w->5/w->1+2+3+5+6+7+8+9+10+11+12
+A:3#->$
+O:w->10+11/2w->5/$_->3
+P:w->4+8+9 // Staking out the bottom left corner.
+
+C:3w->O$/B#O->C/t->2/Zrpart/b_r->6/++/w->6+10/M#C->/t->2/B#C->/b_s->3/++/#->C
+O:3#->O/w$->5/2w$->/t_r+w->5/++2/$_h->4
+P:F#P->/w->1+6+12+8/w1->9/2w9->4/w4->/t->4/#->P
+A:3w->O$/B#O->A/3B#$->/t->12+11+9/++2/Zmurine/Z%h/++2/2#A->$/#->A
+
+C:t->2+4/t2+t4->/b_r->2/++2/w->10+2+6/w9->1/w7->3
+O:XA11/At11->/M#O->A$/++/Z%f/++/#->A/XC5/Cw5->/XC5/Cb_w5->/++/Pw$->/w->11/2w11->12/#->A$/XA12/At12->/#->A$/++/$_->2
+P:t4^t_r/++/B#P->/w->1+6+12+8/2w4->8/w12->/t->12/2w8->/t->8/#->P
+A:(M+B)#$->/b_m+w->9/w->$/F#$->/t->12/++/M#$->/t->7/++/2#A->$/w->9/2#->A
+
+C:t->2+3/t2+t3->/b_w->1+11/++2/w->10+6+1/(B+R)#C->/t->3/2#->C // Overpaid for the first Workshop (0 Wood).
+O:2Cw$->/t_m+w->11/++2/Zleague/%f->e/XA12/At12->/#->A$/++/2w12->7/#->A$/XA7/At7->/#->A$/++/#->O/Zswap/#->O/$_h->3
+P:Zfalse/#false$->/Ow11->12/t12^t_e/++2/#O->P/t8^t_s/++3/F#P->/w->1+6+8+12/w1->/t->1/3w6->3/2w3->/t->3/2#->P
+A:(F+M+2R)#$->/t->12+11+3/++3/(M+B)#$->/t->7/++2/M#A->/w->$/#A->$/2w->9/2#->A
+
+C:3w->O$/#O->C/t->2+3/Z%b/++/#->A/#^P/?Pt_s3/Pt3->/++/#^P/?Pt_e1/#C->P/#^P/?Pt_b1/Pt1->/++/t2+t3->/b_s->11/++2/w->10+1+6/B#C->/3w6->11/^A/#->A$/w12->10/XA3/At3->/#->A$/++/2#->C
+O:#A->O/#O->A/#->O/2Cw$->/t_r+w->6/++2/Zprop/w$->11/XA7/At7->/#->A$/++/#->O/F#O->/Cw6->/w->6
+P:Z%s/++2/R#P->/w->5+3+4+10/t4<->t12/w1->5/w5->/t->5/2#->P/#P->
+A:(2R+F+B)#$->/t->6+3/++3/Zengrave/Z%f/++2/#A->$/w9->4/w4->/t->4/++2/2#->A
+
+C:t->2+3+11/5w10->1/5w1->9/^A/#->A$/t3+t11+t2->/b_r->9/++3/w->2+6+9+10/2#->C
+O:XA6/At6->/#->A$/++/XA11/At11->/#->A$/++/XA12/At12->/#->A$/++/4w5->10/XC10/R#C->/2Cw10->2/2w10->/XC10/Cb_r10->/++/#->O/R#O->/Pw5->/w->5/XP5/Pt5^t_r/Pw->1/(w+Pt_r)5->/++/#->O
+P:Zfalse/#false$->/2Aw9->4/w3->/t->3/4w8->7/2w7->/t->7/t12<->t4 // Exerted.
+A:4F#$->/t->12+6/++3/Z%t/++3/B#A->/w->$/2w4->8/XP8B@/2w8->/w->9/2#->A
+
+C:t->2+3+11/Z%t/++2/#->A/4w2->5/w5->1/^A/#->A$/t2+t3+t11->/b_s->5/++3/XA3/At3->/R#C->A$/++/2#->C
+O:#A->O/#O->A/#->O/2w10->12/2w$->/t_f+w->12/++2/M#O->/Pw7->/w->7/XA12/At12->/#->A$/++/XA6/At6->/#->A$/++/Z%s/++2/#->A/2w$->/t_r+w->7/++2/%s->e/XP7M@/(4w+Pw+Pt)7->/++
+P:t3^t_r/++4/R#P->/w->5+3+4+10/XA4/At4->/R#P->A$/++/w12->4/w1->10/w10->/t->10
+A:2R#$->/t->4/++/Z%b/++2/2#A->$/B#A->/w->$/w->9/XC9/2Cw9->/XC9/Cb_r9->/++/2#->A
+
+C:t->5+2+3+11/Z%x/++/#->A/t5+t11+t3->/b_s->5/++4/XP8/Pt8->/++/3w1->10/2t2->/b_r->10/++2/B#C->/XO5/Ot5->/++ // I count 5 actions, and only 1 Bird spent: Build, Battle, Move, Build, Battle. Did I miss a Bird spend?
+
+Winner: C // Frequent disconnects didn't stop the winner. :)

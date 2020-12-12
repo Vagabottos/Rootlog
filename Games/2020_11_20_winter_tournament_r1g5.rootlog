@@ -1,0 +1,75 @@
+// Root Winter Tournament - Round 1, Group 5
+// Played: 20 November 2020.  
+// https://www.youtube.com/watch?v=oT320_naT0A
+
+// Commentary
+
+// When the Eyrie take a significant mid-game lead, the rest of the table has to band together to figure out how to stop them. Updated for Rootlog V2.4.
+
+Map: Winter
+Deck: E&P
+Clearings: M1, F2, M3, M4, F5, F6, R7, F8, R9, M10, R11, F12
+Pool: CDEAP
+P: Nevakanezah
+D: Carlos
+E: Reality
+A: Circvs
+
+E:b+6w->1/#despot->$
+A:3#->$
+D:t->3/2w->3+7+8+12
+P:w->4+6+8
+
+A:(2B+F)#$->/t->2+7+12/++2/Z%h/++2/#->A // A strong start.
+E:B#E->$_r/w->1/2w1->10/b->10/++/#->E
+D:2w->0/XA7/At7->/R#D->A$/++/(R+B)#^/#captain->$/++/#->D
+P:B#P->/w->1+3+4+10/w10->3/w2->/t->2/2w4->/t->4/#->P
+
+A:R#$->/t->8/++/#A->$/#->A
+E:Zmurine/R#E->$_m/w->1/4w1->11/4w11->9/b->9/++2/2#->E
+D:2w->9/XA12/At12->/^A/#->A$/(R+M)#^/#marshal->$/++/#->D
+P:Zleague/B#P->/w->2+5+6+12/w9->4/w5->6/w6->/t->6/#->P
+
+A:(B+F)#$->/(Pw+Pt)2->/++/b_f+w->2/w->$/#A->$/w->2/2#->A
+E:(R+B)#E->$_x/Z%b/++/w->9/3w9->8/#->A$/w9->11/XA8/At8->/#->A$/++2/XD8/(2w+2Dw)8->/b->11/++3/2#->E
+D:w->0/R#D->/t+4w0->9/XE9/XE9/(Eb+Ew+w)9->/++/3w0->3/(M+F)#^/#foremole->$/++/#->D
+P:Z%t/#->E/++2/t4^t_r/++/t6^t_s/++2/F#P->/w->2+5+6+12/w5->6/2w12->3/w3->/t->3/#->D
+
+A:R#$->/t->7/++/Zboat/B#A->/w->$/w2->12/2#->A
+E:2M#E->$_r/2w->1/w->11/2w1->11/3w11->9/XD9/2Dw9->/XD9/b->8/++3/2#->E
+D:3w->0/3w3->8/XE8/M#^P/?Pt_e3/Pt3->/++/#->D
+P:2w6->5/w5->/t->5/2w4->11/#->P
+
+A:2#A->$/w->2/w12->/t->12/++/2#->A
+E:B#E->$_r/F#E->$_x/2w->1+10/2w1->5/w9->8/F#^P/?Pt_e5/Pt5->/++/XD9/Dw9->/XD9/Dt9->/++2/XP5/(w+Pw)5->/b->5/++3/2#->E
+D:3w->0/M#D->/t+4w0->1/XE1/(w+2Ew)1->/w0->/(F+M+R)#^/#brigadier->$/++2/#->D
+P:B#P->/w->2+5+6+12/XE1/Eb1->/++/w1->11/w11->/t->11/#->P
+
+A:2M#$->/t->3/++/#A->$/F#A->/w->$/w->2/2w2->6/XP6/2#->A
+E:M#E->$_r/Z%f/++/3w->10/2w->8/3w8->12/F#E->A$/3w10->4/XP4/Pt_r4->/++2/Pw->9+10+11/XA12/At12->/#->A$/++2/XP9/b->4/++4/2#->E
+D:w->0/4w1->10/XE10/3Ew10->/XE10/(w+Ew+Eb)10->/++/3w10->4/XE4/3Ew4->/XE4/Eb4->/++/(2R+M)#^/#mayor->$/++2/#->D
+P:t11^t_e/#E->P/++2/M#P->/w->1+3+4+10/%t->e/3w3->8/XE8/Ew8->/XE8/Eb8->/++/t6<->t11/w6->5 // Activated League and exerted.
+
+A:2R#$->/2Dw7->/b_r+w->7/w->$/2F#$->/t->6/++/Z%f/#->E/++/2w6->5/XE5/(Ew+Eb+w)5->/++/w5->/t->5/++2/w->7/3#->A
+E:F#E->$_x/$_->/--5/#commander->$/2#->E
+D:3w->0/M#D->/b_c->4/3w0->1/XA3M@/2Dw3->/XE12/(w+2Ew)12->/XP8/3Pw8->/2w8->9/w9->4/(2R+F)#^/#banker->$/++2/#->D
+P:B#P->/w->3+4+10/XD3/Dt3->/++/XD12/(w+Dw)12->/w2->/t->2/2#->P
+
+A:2w7->12/w12->8/w7+w8->/t->7+8/++5/3#->A/#A
+E:M#E->$_m/w8->3/^A/#->A$/w3->7/#->A$/XA7R@/w7->/2#->E
+D:3w->0/R#D->/t+3w0->7/XA7B@/(2w+At)7->/^A/#->A$/++/XA7/Ab_r7->/++/(2R#+2w)$->/F#D->/b_m->4/w8->9/XE9/(w+2Ew)9->/Z%b/#->E/++/2#->D
+P:Z%s/#->E/++2/#->E/Ztun/t2^t_e/#A->P/++3/R#P->/w->7+8/XA3/At3->/#->A$/++/XA8/At8->/#->A$/++/w5->/t->5/3#->P
+
+A:B#A->/w->$/#A->$/w->2/w2->7/w7->/t->7/++2/2#->A
+E:Zsabo/F#E->$_r/$_->/--2/#builder->$/#->E
+D:3w->0/F#D->/t+3w0->6/^A/XP6/(Pt_e+Pw)6->/++/XP4/(w+Pw)4->/XA7B@/(w+t)7->/A++/R#D->/b_m->1/XP9/(w+Pw)9->/3#->D
+P:Zsabo/R#P->/w->7+8+9+11/4w11->4/XD4/2Dw4->/%s->e/XD4/(Dw+Db_m+Db_c)4->/++2/#D->/#bankerD$->/w9+2w4->/t->9+4/2#->P
+
+A:(R+B)#$->/Pw7->/b_r+w->7/w->$/Z%s/#->E/++2/w->7/w7->3/w3->/t->3/++2/XP2/Pw2->/3#->A
+E:Ztun/F#E->$_m/$_->/--2/#charismatic->$/#->E
+D:2w->0/M#D->/t+2w0->4/w1->11/XP11/Pt_s11->/++/M#^P/?Pt_b4/M#D->P/XP4/(2w+2Pw)4->/2w6->4/XP4/(Pt+w)4->/++/2#->D
+P:#sabo$->/#boatA$->/t9^t_r/++2/t5^t_b/++3/At5->/F#P->A$/++/M#P->/w->1+3+4+10/XA3/At3->/#->A$/++/w9->8/w3+2w10->/t->3+10/2#->P
+
+A:(B+M)#$->/t->3/++2/2F#$->/t->5/++2/w->7/2w7->3/2w3->8/w8->/t->8/++3
+
+Winner: A
