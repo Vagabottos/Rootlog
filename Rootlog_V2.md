@@ -1,14 +1,16 @@
-# About
+# Rootlog
+
+A unified notation system for tracking turn activity in the board game [Root](https://ledergames.com/products/root-a-game-of-woodland-might-and-right), produced by Leder Games inc.
+
+## About
 
 This is a WIP. Current version: V2.5 (updated 11 Dec 2020). Questions and Feedback are greatly appreciated.
 
-"Rootlog" is a unified notation system for tracking turn activity in the board game [Root](https://ledergames.com/products/root-a-game-of-woodland-might-and-right), produced by Leder Games inc.
-
-This system is inspired in part by algebraic notation in Chess. It's also inspired by and heavily draws on Nevakanezah's original [Rootlog](https://boardgamegeek.com/thread/2543149/article/36304225) notation. Parts of this introduction and other sections are copied from his work there.
+This system is inspired in part by algebraic notation in Chess. It's also inspired by and heavily draws on Nevakanezah's original [Rootlog](https://boardgamegeek.com/thread/2543149/article/36304225) notation.
 
 To handle different factions having very different moves and abilities, Rootlog eschews recording the names of each faction-specific action, and instead records the movement of game pieces incurred by those actions. This means that readers must employ some intuition to understand what happens and why during each turn.
 
-# Goals
+## Goals
 
 1. To track legal changes to board state.
 2. To allow quick recording of actions by hand during a game.
@@ -16,34 +18,34 @@ To handle different factions having very different moves and abilities, Rootlog 
 
 Future changes will be evaluated based on whether they get Rootlog closer to these goals.
 
-# Improvement Space
+## Improvement Space
 
 * Not all Draft systems may be included by this notation.
 * Ministers do not yet have abbreviations (for instance, `#duchessofmud` takes a bit long to write).
 
-# General Syntax
+## General Syntax
 
-## Brackets in Syntax
+### Brackets in Syntax
 * `[X]` = optional, can be omitted, often has a default value
 * `<X>` = required, but variable
 * `X` = write as shown (i.e. an actual "X")
 
-## Separating Actions and Turns
+### Separating Actions and Turns
 * In the syntax on this page, "current player" means the player who's currently taking their turn.
 * `/` or `;` separates actions recorded within the same turn.
 * Each turn must be on its own line.
 * You may optionally add an empty line after each round (when everyone's taken a turn), to make the game more human-readable.
 * Commentary can be put at the end of a line like this: `// [Commentary]`.
 
-### Start Turn
+#### Start Turn
 `<Faction>:`
 
 This syntax is at the beginning of each line that represents a turn, not on its own line.  
 
-### End of Game
+#### End of Game
 `Winner: <Factions...>`
 
-## Game Setup (including Draft, if any)
+### Game Setup (including Draft, if any)
 
 The following lines must be included at the beginning of the notation, in the order they're shown here.
 
@@ -57,13 +59,13 @@ The following lines must be included at the beginning of the notation, in the or
 
 Record faction setup steps using game notation. Each faction takes a "Setup" turn (in the notation), so the first turn recorded can always be read as the setup.
 
-## Suits
+### Suits
 * `B` = Bird
 * `F` = Fox
 * `M` = Mouse
 * `R` = Rabbit
 
-## Factions
+### Factions
 * `C` = Marquise de Cat
 * `E` = Eyrie Dynasties
 * `A` = Woodland Alliance
@@ -74,19 +76,19 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 * `D` = Underground Duchy
 * `P` = Corvid Conspiracy
 
-## Piece Types
+### Piece Types
 * `w` = warrior
 * `p` = pawn
 * `b` = building
 * `t` = token
 * `r` = raft (Lake map only)
 
-## Pieces
+### Pieces
 `[Faction]<piece type>[_<letter>]`
 * `Faction` = If omitted, it's the current player's faction.
 * `letter` = Specifies a certain piece of that type. For example, for the Marquise, `b_s` would be a Sawmill.
 
-## Cards
+### Cards
 `[Suit]#[card name or abbreviation]`
 * `Suit` = Suit of the card. If empty, it's either any suit or unknown. Suits can be combined and grouped if desired (see section and examples below).
 * `card name or abbreviation` = The name of the card (all lower case with no spaces) or the abbreviation of the card listed in the Card Name Abbreviations section below. Card names and abbreviations can both be used within the same game's notation. If omitted, it's assumed it doesn't matter.
@@ -99,7 +101,7 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 `(2F+M)#` *Two Fox cards and one Mouse card.*  
 `R#favor` *Favor of the Rabbits*  
 
-## Item Types
+### Item Types
 * `s` = sword
 * `b` = bag
 * `c` = coin
@@ -109,46 +111,46 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 * `r` = to"r"ch 
 * `f` = boot (for "foot")
 
-## Items
+### Items
 `%<item type>`  
 * `item type` - type of the item
 
 `%_`  *All items in that Location.*
 
-## Item States
+### Item States
 When used as a Start in Move (below), it specifies which item to move (refreshed or exhausted). When used as a Destination in Move, the item stays where it is and flips to the given side.  
 * `r` = Face-up ("refreshed")
 * `e` = Face-down ("exhausted")
 
-## Clearings
+### Clearings
 `<Number>`
 * `Number` = 1-12, according to the Law of Rootbotics map diagrams.
 
-## Forest
+### Forest
 `<First Clearing>_<Second Clearing>_<Third Clearing>[_<Other Clearings>...]`
 * `Clearings` = All clearings adjacent to the forest, in order from lowest number to highest number.
 
-## Faction Boards
+### Faction Boards
 
 `[Faction]$`
 * `Faction` = If omitted, it's the current player's faction.
 
 For all players, Crafted Improvement cards are on their Faction Board.
 
-## Player Hands
+### Player Hands
 `<Faction>`
 * `Faction` = Faction whose hand this is.
 
-## Locations
+### Locations
 A term for reference in other syntax. Includes Clearings, Forests, Faction Boards, Player Hands, Item States, and other locations named under Special Faction Syntax.
 
-## Battles
+### Battles
 `[Attacker Faction]X<Defender Faction><Clearing>[<Suit>@[<Suit>@]][(<Attacker Roll>,<Defender Roll>)]`
 * `Attacker Faction` = If omitted, it's the current player's faction.
 * `<Suit>@` = An ambush card. First one is defender's, second one is attacker's.
 * `Attacker Roll` and `Defender Roll` = Rolls can always be omitted entirely, and are completely aesthetic if included. If you include them, these are the numbers rolled by the Attacker and Defender, not including extra hits. For example, an unfortunate attack on a Woodland Alliance's base might read `(0,3)`.
 
-## Move
+### Move
 `[Number]<Piece, Card, or Item>[Start]->[Destination]`
 * `Number` = How many of the Piece, Card, or Item are involved. If omitted, it's one.
 * `Piece, Card, or Item` = See Piece, Card, and Item sections above.
@@ -181,7 +183,7 @@ A term for reference in other syntax. Includes Clearings, Forests, Faction Board
 `%s->e` *The current player exhausts a sword.*  
 `%fe->` *The current player removes one of their exhausted boots from play.*  
 
-### Discard Pile Start Location
+#### Discard Pile Start Location
 `*` *The Discard Pile, when it's drawn from.*
 
 Can only be used as a Start Location in Move.
@@ -190,7 +192,7 @@ Can only be used as a Start Location in Move.
 `F#@*->P` *Use Informants to draw an Ambush from the Discard Pile.*  
 `M#favor*->V` *The Tinker uses Day Labor to draw Favor of the Mice from the Discard Pile.*  
 
-## Reveal
+### Reveal
 `[Number][Card][Faction]^[Target Faction]`
 * `Number` = How many cards are revealed. If omitted, it's one.
 * `Card` = The card(s) being revealed. If omitted, it's their whole hand.
@@ -203,10 +205,10 @@ Can only be used as a Start Location in Move.
 `2M#^` *The current player reveals two Mouse cards to the whole table.*  
 `V^O` *The Vagabond reveals their whole hand to the Riverfolk.*  
 
-## Optional Move and Reveal Notations
+### Optional Move and Reveal Notations
 These aren't necessary, but you can use them for faster, clearer notation.
 
-### Combine Multiple Pieces, Cards, Items, or Clearings in Move or Reveal Notation
+#### Combine Multiple Pieces, Cards, Items, or Clearings in Move or Reveal Notation
 
 Shows simultaneous or immediately sequential movement. If Clearing Destinations are combined, that means that the shown number of Pieces went to *each* Clearing.
 
@@ -220,7 +222,7 @@ Shows simultaneous or immediately sequential movement. If Clearing Destinations 
 `F#+2M#^` *Reveal one fox card and two mouse cards.*  
 `%h+%c+%s->r` *Refresh a hammer, coin, and sword.*
 
-### Group Combined Pieces, Cards, or Items in Notation
+#### Group Combined Pieces, Cards, or Items in Notation
 
 Group combined things together to make them easier to track, both when writing and reading.
 
@@ -243,29 +245,29 @@ Group combined things together to make them easier to track, both when writing a
 `(M+2F)#^` *Reveal a Mouse card and 2 Fox cards from the current player's hand to the whole table.*  
 `(2%c+%h)V$->d` *Damage 2 coins and a hammer on the Vagabond's board.*
 
-## Craft
+### Craft
 `Z<Item>`  
 `Z<card name>`  
 * `card name` = All lowercase, no spaces.
 
-## Score or Lose Points
+### Score or Lose Points
 `[Faction]++[Number]` *Score points.*  
 `[Faction]--[Number]` *Lose points.*
 * `Faction` = The faction scoring points. If omitted, it's the current player's faction.
 * `Number` = Number of points to score. If omitted, it's one.
 
-## Move VP Token to Faction Board (for Dominance or Coalition)
+### Move VP Token to Faction Board (for Dominance or Coalition)
 `++-><Faction Board>`
 * `Faction Board` = The faction board your VP token is moving to.
 
-## Closed Path Marker (Mountain Map only)
+### Closed Path Marker (Mountain Map only)
 `<Lower Clearing>_<Higher Clearing>->`
 * `Lower Clearing` = The lower number of the two clearings adjacent to the Closed Path.
 * `Higher Clearing` = The higher number of the two clearings adjacent to the Closed Path.
 
-# Special Faction Syntax
+## Special Faction Syntax
 
-## Marquise de Cat
+### Marquise de Cat
 
 When notating Field Hospitals, notate that the warriors moved from the clearing they were removed from into the keep's clearing. Don't remove them to the supply.
 
@@ -275,35 +277,35 @@ When notating Field Hospitals, notate that the warriors moved from the clearing 
 * `t_k` = Keep
 * `t` = Wood
 
-## Eyrie Dynasties
+### Eyrie Dynasties
 
 The following actions can only be notated on the Eyrie Dynasties's turn:
 * Move cards to the Decree
 * Discard the Decree
 * Appoint a new Leader
 
-### Decree Columns
+#### Decree Columns
 * `r` = Recruit
 * `m` = Move
 * `x` = Battle
 * `b` = Build
 
-### Decree
+#### Decree
 This is a Location.  
 `$_<decree column>`
 * `decree column` = The column that cards are being added to or removed from.
 
-### Discard the Decree, including Viziers and Leader
+#### Discard the Decree, including Viziers and Leader
 That is, discard the whole board.  
 `$_->`
 
-### New Leader
+#### New Leader
 `#<leader name>->$`
 * `leader name` = all lower case
 
 Example: `#commander->$`
 
-## Woodland Alliance
+### Woodland Alliance
 
 The Woodland Alliance's Faction Board is its supporters and officers.
 
@@ -311,17 +313,17 @@ The Woodland Alliance's Faction Board is its supporters and officers.
 * `b_r` = Rabbit base
 * `b_m` = Mouse base
 
-## Vagabond
+### Vagabond
 
 The Vagabond's Faction Board is its Satchel (undamaged).
 
-### Board Areas
+#### Board Areas
 These are Locations. When used as a Destination in Move, the item stays on its current board and moves to the new area unchanged.  
 * `s` = Satchel (undamaged)
 * `d` = Damaged
 * `t` = Track (appropriate to the Item)
 
-### Item Locations
+#### Item Locations
 These are Locations.  
 `<board area>[item state]`
 * `board area` = The area the item is either in or moving to.
@@ -336,16 +338,16 @@ Examples:
 `%ct->s` *Move coin from track to satchel.*  
 `%rr->d` *Damage an unexhausted torch.*  
 
-### Available Quests
+#### Available Quests
 This is a Location.  
 `Q`
 
-### Relationship Marker
+#### Relationship Marker
 `[Vagabond Faction]$_<Faction>`
 * `Vagabond Faction` = The Vagabond whose relationship is changing (`V` or `G`). If omitted, it's the current player.
 * `Faction` = The faction the relationship is with.
 
-#### Relationship Status
+##### Relationship Status
 This is a Location, on the `Vagabond Faction`'s board above.  
 * `h` = Hostile
 * `0` = Indifferent
@@ -353,7 +355,7 @@ This is a Location, on the `Vagabond Faction`'s board above.
 * `2` = One to the left of Allied
 * `a` = Allied
 
-## Riverfolk Company
+### Riverfolk Company
 
 The following actions can only be notated on the Riverfolk Company's turn:
 * Set prices
@@ -367,24 +369,24 @@ Committed funds are not notated, just the actions those funds allow. The Riverfo
 
 The Riverfolk have no buildings.
 
-### Price Type
+#### Price Type
 * `h` = Hand card
 * `r` = Riverboats
 * `m` = Mercenaries
 
-### Set Prices
+#### Set Prices
 `$_[price type]-><New Price>`
 * `price type` = If omitted, *all* prices are set to the new price.
 * `New Price` = 1-4, the new price of the service
 
 If this is omitted from the Riverfolk's turn, prices stay the same.
 
-### Funds
+#### Funds
 Don't use this to record changes in funds *during* the Riverfolk's turn. Only use this at the *end* of their turn and when their funds are removed on *others'* turns. If this action is omitted at the end of the Riverfolk's turn, funds are assumed to be zero.  
 `$_f-><Number>`
 * `Number` = The number of funds on the Riverfolk's board.
 
-## Lizard Cult
+### Lizard Cult
 
 The following actions can only be notated on the Lizard Cult's turn:
 * Set the Outcast suit
@@ -396,16 +398,16 @@ When the Lizard Cult's revealed cards return to their hand, it's not notated. Wh
 * `b_r` = Rabbit garden
 * `b_m` = Mouse garden
 
-### Outcast
+#### Outcast
 After the Outcast or Hated Outcast is set, all Lost Souls are moved to the discard pile; this is not notated.
 
-#### Set the Outcast Suit.
+##### Set the Outcast Suit.
 `$_o-><Suit>`
 
-#### Set the Hated Outcast Suit.
+##### Set the Hated Outcast Suit.
 `$_ho-><Suit>`
 
-## Underground Duchy
+### Underground Duchy
 
 The following action can only be notated on the Underground Duchy's turn:
 * Sway a Minister
@@ -416,11 +418,11 @@ When the Underground Duchy's revealed cards return to their hand, it's not notat
 * `b_m` = Market
 * `0` = Burrow (Clearing Number)
 
-### Sway a Minister
+#### Sway a Minister
 `#<minister name>->$`
 * `minister name` = all lower case, no spaces
 
-## Corvid Conspiracy
+### Corvid Conspiracy
 
 * `t` = Facedown plot
 * `t_b` = Bomb plot
@@ -428,32 +430,32 @@ When the Underground Duchy's revealed cards return to their hand, it's not notat
 * `t_r` = Raid plot
 * `t_e` = Extortion plot
 
-### Exposure
+#### Exposure
 `?P<plot token><Clearing>`  
 * `plot token` = The type of plot token guessed by the current player, for example, `t_e`.
 * `Clearing` = The clearing the plot token is in
 Success or failure of the guess is conveyed by the actions that follow (give card or remove token).
 
-### Flip Plot 
+#### Flip Plot 
 `[P]t<Clearing>^<plot token>`
 * `P` = Omitted when the Corvid Conspiracy is the current player
 * `Clearing` = The clearing the plot token is in
 * `plot token` = The plot token the plot is revealed to be
 
-### Trick
+#### Trick
 `t<Clearing><->t<Clearing>`
 
 Note: The `<->` in the middle of this action is written as is. For example, `t12<->t4` means that the plots on clearings 4 and 12 switch places.
 
-# Card Name Abbreviations (Optional)
+## Card Name Abbreviations (Optional)
 
 See Cards section above. These abbreviations are not necessary, but can optionally be used in place of the full card name.
 
-## Both Decks
+### Both Decks
 * `@` = Ambush
 * `dom` = Dominance
 
-## Standard Deck
+### Standard Deck
 * `armor` = Armorers
 * `bank` = Better Burrow Bank
 * `brutal` = Brutal Tactics
@@ -467,7 +469,7 @@ See Cards section above. These abbreviations are not necessary, but can optional
 * `stand` = Stand and Deliver
 * `tax` = Tax Collector
 
-## Exiles & Partisans Deck
+### Exiles & Partisans Deck
 * `boat` = Boat Builders
 * `charm` = Charm Offensive
 * `coffin` = Coffin Makers
@@ -485,7 +487,7 @@ See Cards section above. These abbreviations are not necessary, but can optional
 * `swap` = Swap Meet
 * `tun` = Tunnels
 
-## Quest Cards
+### Quest Cards
 * `errand` = Errand
 * `bandits` = Expel Bandits
 * `bear` = Fend Off a Bear
@@ -496,7 +498,7 @@ See Cards section above. These abbreviations are not necessary, but can optional
 * `logs` = Logistics
 * `shed` = Repair a Shed
 
-# Common Questions
+## Common Questions
 
 **Q:** Are card activations (such as Partisans, Arbiter, or Ronin) notated?  
 **A:** No; only changes to game state are notated. Notate the result of the effect activation, but not the activation itself. For instance, if a card is discarded when activated, notate that it's discarded. Feel free to add commentary (`//`) to include information that isn't notated.
@@ -507,9 +509,9 @@ See Cards section above. These abbreviations are not necessary, but can optional
 **Q:** How do I notate warriors moving to the Coffin Makers card?  
 **A:** If the Coffin Makers card has been crafted and is still in play, when warriors are moved to the supply (for example, `3w9->`), they're assumed to move to the Coffin Makers card. No additional notation is made.
 
-# Examples
+## Examples
 
-## Example Actions
+### Example Actions
 
 * `#->O` *The Riverfolk draw one card from the deck.*
 * `M#C->` *The Marquise discards one Mouse card. Note: the `C` is **after** the card (`M#`), because it represent the Player's Hand, which is where the card starts before it's discarded.*
@@ -524,7 +526,7 @@ See Cards section above. These abbreviations are not necessary, but can optional
 * `R#@*->D` *Moles use Informants to draw an Ambush card at the end of their turn.*
 * `%_d->s+r` *The Vagabond takes An Evening's Rest, repairing and refreshing all damaged items.*
 
-## Example Sequences
+### Example Sequences
 
 Common sequences of multiple actions in a row.
 
@@ -543,7 +545,7 @@ Common sequences of multiple actions in a row.
 * `XC9/R#C->/2Cw9->2/(2w+Cb_s)9->/++` *The Marquise uses Field Hospitals after being attacked.*
 * `#false$->/3Dw8->9/t9^t_b/3Dw9->` *Corvids play False Orders into a bomb. D:*
 
-## Example Turns
+### Example Turns
 
 ```
 Map: Fall
@@ -567,7 +569,7 @@ A:3w->O$/B#O->A/3B#$->/t->12+11+9/++2/Zmurine/Zh/++2/2#A->$/#->A // Lucky 3 Bird
 
 *... game was continued ...*
 
-# Credits & Contributors
+## Credits & Contributors
 
 [Rootlog initial concept](https://boardgamegeek.com/thread/2543149/article/36304225) by Nevakanezah (licensed under [WTFPL](http://www.wtfpl.net/about/))
 
@@ -579,7 +581,7 @@ Special thanks to feedback and testing from:
 * Seiyria
 * Kyle Werntz
 
-# Changelog
+## Changelog
 
 * Version 2.5 (11 Dec 2020):
   * Clarified that certain actions can only be notated on certain turns.
