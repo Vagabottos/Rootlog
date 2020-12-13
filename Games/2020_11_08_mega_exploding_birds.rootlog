@@ -1,0 +1,59 @@
+// https://www.youtube.com/watch?v=Aay2x74xQf0
+
+Map: Winter
+Deck: E&P
+Clearings: F1, M2, R3, F4, M5, F6, M7, M8, R9, F10, R11, R12
+Pool: CEVOP
+P: phod
+E: GuerricS
+O: Bott_bott
+V: MarcustheCat
+
+E:(6w+b)->3/#charismatic->$
+V:#adventurer->$/p->8_9_11_12
+O:4w->11/3w->$/($_h+$_m)->2/$_r->3
+P:w->1+5+9
+
+V:R#O->V/2Ow->O$/p->11/%r->e/%f11->$/++/%f->e/p->4/%h->e/Z%x/++/#->V //Did not notate the Vagabond exhausting items to buy a card because they were immediately unexhausted - the players skipped flipping and unflipping the tokens
+O:4w10->4/XV4/(%f+%x)V$->d/2w4->9/2#->O/$_h->3
+E:2w->O$/(R+B)#E->$_r/6w->3/XV4/%_V$->d/#->E //12 warriors at his roost
+P:B#P->/w->1+4+6+10/w5->6/w6->/t->6/w10->1/w1->/t->1
+
+V:p->4_9_11/%_d->s+r/#->V  //Skipped notating refresh at the start of turn because One Evening's Rest
+O:2w->$/2w10->11/2w4->11/4w11->12/#->O/4w12->11/2#->O/2#O->
+E:F#E->$_b/6w->3/--3/$_->/#despot->$/#->E //18 warriors at the roost!
+P:t6^t_e/++/t1^t_s/++2/F#P->/w->1+4+6+10/w9->4/w4->/t->4/w10->4/2#->P
+
+V:p->9/%r->e/%b9->$/++/%f->e/p->8/%h->e/Z%b/++/%f->e/p->3/%b->s+e/#V->E/$_E->1/#->V //Vagabond forgot to score for aid
+O:2w$->/(w+t_r)->11/++2/4w11->1/XP1F@/2w1->/2Pw1->/XP1/Pt_s1->/++/2Ew$->/(w+t_r)->3/++2/Z%c/++3/$_h->2 //Forgot to score for second trading post until the Eyrie's turn
+E:2w->O$/B#O->E/B#E->$_x/12w3->8/XO3/(Ow+Ot_r+w)3->/++2/b->8/++/#->E
+P:Zemi/t4^t_s/++2/M#P->/w->2+5+7+8/3w4->10/XO4/(Ow+Ot_r+w)10->/++/2w10->1/2w1->5/w5->/t->5/2#->P
+
+V:%r+2%f->r/p->8/%r->e/%h8->$/++/2%f->e/M#Q->$/2#->V/%h+%x->e/2#V->E/$_E->2/++2/#->V
+O:2Ew$->/(w+t_m)->8/++2/Z%b/++/2w1->10/2w10->4/XP4B@/2w4->/#->O/$_h->3/$_m->4
+E:B#E->$_m/Zswap/9w8->9/3w9->4/XP4/Pt_s4->/++2/b->9/++2/2#->E/#E->
+P:t5^t_e/++2/R#P->/w->3+9+11+12/w9->8/XO8/Ow8->/XO8/Ot_m->/++/w7->2/w2->/t->2/3#->P
+
+V:%r+2%h->r/p->12/%r->e/%s12->$/++/2%h->e/Z%c/++3/%s->e/#V->P/$_P->1/++/2#->V
+O:2w->$/w$->/w->10/2w$->/(w+t_f)->10/++2/#->O/Z%t/++2/2w$->/2w->12/($_h+$_r)->2 //Good play, crafting tea to empower the VB, so the others need the RC on the map to police the VB
+E:2Ew->O$/B#domO->E/#V->E/#E->V/B#E->$_x/Zcoffin/Z%t/++/4w9->8/4w8->12/XV12/w12->/V$_E->h/(%f+%r)V$->d/XV12/w12->/(%f+%b)V$->d/b->12/++3/2#->E
+P:Zsabo/Zfpart/t2^t_r/++3/F#P->/w->1+4+6+10/2w8->12/XE12/(2Ew+w)12->/XE12/Eb12->/++/w11->1/w1->/t->1/3#->P
+
+V:p->1_2_5_6_11_12/$_d->s+r/%bs->t/2#->V/#V-> //Not notating refreshing before One Evening's Rest, even though only 3/4 undamaged items should be refreshed... Small error, but not a relevant one
+O:Zprop/R#O->/Pw12->/w->12/#->O
+E:++/#V->E/#E->V/B#E->$_r/Zmpart/w->9/3w3->7/3w7->2/XP2M@(0,0)/(2F+R)#E->/Pw2->/XP2/Pt_r2->/++2/Pw->6+7+12/b->4/++3/#->E //Only drew one card by mistake?
+P:#sabo$->/#coffinE$->/t1^t_s/++3/B#P->/w->2+6/2w12->3/XE3/2Ew3->/XE3/Eb3->/++/3w3->7/w7->/t->7/3#->P
+
+V:p->2/#V->E/%tE$->$/%s->e/XE2/Ew2->/++/%f->e/p->6/2%h->e/Z%s/++2/%f->e/p->5/%x->/Pw5->/$_P->h/XP5/Pw5->/++/%ct->d+e/%r->e/F#Q->$/2#->V/#->V/#V-> //Forgot to exhaust an item to aid the birds
+O:2w->$/F#O->/Pw10->/w->10/2w10->1/XP10/(Pw+Pt_s)10->/++/2w$->/(w+t_f)->1/++2/2#->O //Forgot to put the Garrison with the trade post
+E:#P->E/#E->P/B#E->$_m/Z%f/++/w->4/3w4->10/2w10->1/w1->5/XP5/Pt_e5->/++2/XV5/w5->/(%f+%s)V$->d/b->10/++3/#->E //Forgot to draw second card again
+P:Z%h/++2/R#P->/w->3+9+11+12/w9->4/XE4/(Ew+Eb)4->/++/2w4->10/XE10/(Ew+Eb)10->/++/w12->2/w2->/t->2
+
+V:%s+%f+2%h+%r->r/p->1/2%h->e/Z%s/++2/%f->e/#V->O/++/%tO$->$/$_O->1/2%s->e/2#->O/(%b+%c)O$->$/++2/$_O->2/2#->V
+O:2w->$/Z%f/++/F#O->/Ew1->/w->1/3w12->2/XP2/(Pw+Pt+2w)2->/++/2w$->/(w+t_m)->2/++2/$_f->2
+E:2w->O$/R#O->E/(R+M)#E->$_b/w->8/4w8->12/3w12->2/2w9->11/XO2/(2Ow+Ot_m+w)2->/$_f->1/wO$->/++2/XP11R@/2w->/b->2+12/--7/$_->/#commander->$/++3/2#->E
+P:M#P->/w->2+5+7/2w10->1/XV1B@/2w1->/XE8/(Eb+w)8->/++/3w6->5/3w5->1/XV1/2w1->/(3%b+%f)V$->d
+
+V:2%s+2%h+%x+%r+%fd->r/%tt->s+d+e/%bt->s+e/F#Q->$/++2/%h->e/%sd->r/#V->O/%->e/%fO$->$/%h->e/%fd->r/%x->e/Ow1->/$_O->h/%s->e/XO2/2Ow1->/++2/%s->e/XO2/Ot_f2->/++2/2%f->e/p->10/%s->e/XO10/(Ow+Ot_f)10->/++2
+
+Winner: V
