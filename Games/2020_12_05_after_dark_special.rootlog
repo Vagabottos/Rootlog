@@ -17,38 +17,38 @@ P:w->2+3+6
 
 A:(F+R)#$->/t->4+11/++/2#A->$/#->A
 P:B#P->/w->2+4+8+12/w2->/t->4/w12->8/2w->8/t->8/w3->8
-D:w->0/2w->O$/#gentlyusedknapsackO$->D/R#D->/(t+w0)->5/R#^/b_m->5/2M#^/#marshal->$/++/2#->D
-O:2w$->/b_f+w->12/++2/Z%x/++/#->O/$_h->3
+D:w->0/2w->O$/#gentlyusedknapsackO->D/R#D->/(t+w0)->5/R#^/b_m->5/2M#^/#marshal->$/++/2#->D
+O:2w$->/t_f+w->12/++2/Z%x/++/#->O/$_h->3
 
-A:3w->O$/#cplansO$->A/(B+R)#$->/2Dw->/b_r+w->11/w->$/M#$->/t->10/++/w->11/Zsoup/2#->A  // Soup kitchens crafted out of order, but was an easy rollback
-P:3w->O$/M#@O$->P/Z%s/++2/t2^t_e/++/t8^t_r/++2/F#P->/w->2+4+8+12/w2->6/2w6->5/XD5/(Dw+Dt)5->/++/XD5/Db_m5->/#marshalD$->/++  // Duchy forgot to discard for Price of Failure
+A:3w->O$/#cplansO->A/(B+R)#$->/2Dw11->/b_r+w->11/w->$/M#$->/t->10/++/w->11/Zsoup/2#->A  // Soup kitchens crafted out of order, but was an easy rollback
+P:3w->O$/M#@O->P/Z%s/++2/t2^t_e/++/t8^t_r/++2/F#P->/w->2+4+8+12/w2->6/2w6->5/XD5/(Dw+Dt)5->/++/XD5/Db_m5->/#marshalD$->/++  // Duchy forgot to discard for Price of Failure
 D:w->0/2w->0/(B+2M)#^/#brigadier->$/++2/B#->/#->D
-O:2Aw$->/b_r+w->11/++2/Aw$->/w->11/3Pw$->/3w->11/3#->O
+O:2Aw$->/t_r+w->11/++2/Aw$->/w->11/3Pw$->/3w->11/3#->O
 
-A:3w->O$/#saboO$->A/Zsabo/w->11/2#->A
-P:3w->O$/#leagueO$->A/M#P->/w->6+7+9+10/w6->/t->6/2w5->6/w7->3/#->P
+A:3w->O$/#saboO->A/Zsabo/w->11/2#->A
+P:3w->O$/#leagueO->P/M#P->/w->6+7+9+10/w6->/t->6/2w5->6/w7->3/#->P
 D:w->0/R#D->/(t+4w0)->5/R#^/b_c->5/XA10/At10->/M#D->A$/++/XA4/At4->/D^A/#->A$/++/2M#^/#captain->$/++/#->C
-O:2Pw$->/b_m+w->12/Dw$->/#->O/Z%f/++/Aw$->/w->11/3w11->1
+O:2Pw$->/t_m+w->12/Dw$->/#->O/Z%f/++/Aw$->/w->11/3w11->1
 
 A:(M+F+B)#$->/t->4+8+9/++2/Zcharm/#->A/P++/2#->A  // Should have spent one more and scored one more? Had a token on 11
 P:t6^t_e/++3/#O->P/R#P->/w->1+3+5/w1->5/w3->/t->3/XA8/At8->/F#P->A$/++/XA3B@R@/At3->/P^A/#->A$/++
-D:2w->0/R#^/b_c->5/2w0->5/w9->4/w5->6/XP5/Pw->/3M#^/#mayor->$/++2/Zcoffin/#->D
-O:XA11/Aw11->/2Ow11->/3#->O/$_h->4  // Otters had no warriors left for protectionism â€“ they have to suicide against the Alliance!
+D:2w->0/R#^/b_c->5/2w0->5/w9->4/w5->6/XP5/Pw5->/3M#^/#mayor->$/++2/Zcoffin/#->D
+O:XA11/Aw11->/2Ow11->/3#->O/$_h->4  // Otters had no warriors left for protectionism – they have to suicide against the Alliance!
 
-A:(M+B)#$->/(Dw+Pw)9->/(b_m+2w)->9/w->$/2B#A->/2w->$/2#A->$/#->A/P++/w9->4/w4->/t->4/++/w->9+11/3#->A  // Unsure why they put two warriors on their base when revolting â€“ think that was an error
-P:t^3->t_s/++4/M#P->/w->6+7+9+10/XA4F@/2w->/2w8->12/w12->/t->12/3#->P
-D:++/4w->0/B#D->/(t+4w0)->2/XP2/(Pw+Pt_e)->/++/XA4/At4->/D^A/#->A$/++/4w2->7/3w4->0/XP5/Pw5->/XP7/(Pw+w)7->/2M#^/#marshal->$/#->D
-O:2w->$/XP12/Pt12^t_r/Pw->2+3+8/(Pw+2w+Pt_r)12->/++/3w12->2/b_f->2/++2/Z%s/++2/$_h->2
+A:(M+B)#$->/(Dw+Pw)9->/(b_m+2w)->9/w->$/2B#A->/2w->$/2#A->$/#->A/P++/w9->4/w4->/t->4/++/w->9+11/3#->A  // Unsure why they put two warriors on their base when revolting – think that was an error
+P:t3^t_s/++4/M#P->/w->6+7+9+10/XA4F@/2w->/2w8->12/w12->/t->12/3#->P
+D:++/4w->0/B#D->/(t+4w0)->2/XP2/(Pw+Pt_e)2->/++/XA4/At4->/D^A/#->A$/++/4w2->7/3w4->0/XP5/Pw5->/XP7/(Pw+w)7->/2M#^/#marshal->$/#->D
+O:2w->$/XP12/Pt12^t_r/Pw->2+3+8/(Pw+2w+Pt_r)12->/++/3w12->2/t_f->2/++2/Z%s/++2/$_h->2
 
 A:3F#$->/t->8+12/++2/Ztun/#A->$/#->A/P++/2w9->8/2w8->12/2w->9/3#->A
-P:Zprop/F#P->/Ow2->/w->2/XD2/Dt2->/++/2w2->12/XO12/Ob_f12->/++/2#->P
-D:++2/4w->0/5w5->1/XO1/Ow1->/XO1/(2Ow+2w)1->/7w0->5/2w1->5/3w5->6/XO6/(w+Ow+Ob_f)6->/++/XP6M@/(3w+Pw)6->/(2M+F)#^/#banker->$/++2/#->D
+P:Zprop/F#P->/Ow2->/w->2/XD2/Dt2->/++/2w2->12/XO12/Ot_f12->/++/2#->P
+D:++2/4w->0/5w5->1/XO1/Ow1->/XO1/(2Ow+2w)1->/7w0->5/2w1->5/3w5->6/XO6/(w+Ow+Ot_f)6->/++/XP6M@/(3w+Pw)6->/(2M+F)#^/#banker->$/++2/#->D
 O:2w->$/5#->O/2#O->/$_->3
 
 A:(B+F)#$->/(2Ow+2Pw)12->/b_f->12/4#A->$/#->A/P++/4#->A/#A->
 P:R#->/w->1+3+5+11/w11->1/w2->1/w1->/t->1/2#->P
 D:++3/4w->0/2w->0/6w0->5/6w5->6/XP6/(w+2Pw+Pt_e)6->/++/4w6->5/M#D->/++/(F+3M)#^/#earlofstone->$/++3/#->D
-O:2w->$/3#->O/3w11->10/2Ow$->/b_m->10/++2/Zleague/Z%b/#O->
+O:2w->$/3#->O/3w11->10/2Ow$->/t_m->10/++2/Zleague/Z%b/#O->
 
 A:(2R+F+B)#$->/t->1+2/++4/2w9->4/4#A->$/w4->10/w4->/t->4/++2/w10->/t->10/++3/#->A/P++/4#->A/2#A->
 P:Z%c/++3/Z%h/++2/t1^t_s/++3
