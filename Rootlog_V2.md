@@ -4,7 +4,7 @@ A unified notation system for tracking turn activity in the board game [Root](ht
 
 ## About
 
-This is a WIP. Current version: V2.5 (updated 11 Dec 2020). Questions and Feedback are greatly appreciated.
+This is a WIP. Current version: V2.6 (updated 12 Dec 2020). Questions and Feedback are greatly appreciated.
 
 This system is inspired in part by algebraic notation in Chess. It's also inspired by and heavily draws on Nevakanezah's original [Rootlog](https://boardgamegeek.com/thread/2543149/article/36304225) notation.
 
@@ -21,6 +21,7 @@ Future changes will be evaluated based on whether they get Rootlog closer to the
 ## Improvement Space
 
 * Not all Draft systems may be included by this notation.
+* There's no notation for Spy cards.
 * Ministers do not yet have abbreviations (for instance, `#duchessofmud` takes a bit long to write).
 
 ## General Syntax
@@ -361,7 +362,7 @@ The following actions can only be notated on the Riverfolk Company's turn:
 * Set prices
 * Set funds
 
-Committed funds are not notated, just the actions those funds allow. The Riverfolk's Faction Board is its Funds and Payments. Remember: other players buy cards from the Riverfolk's Player Hand!
+Committed funds are not notated, just the actions those funds allow. The Riverfolk's Faction Board is its Funds and Payments. When using Export, *don't* use the craft notation; just discard the card from the Player Hand. Remember: other players buy cards from the Riverfolk's Player Hand, *not* their Faction Board!
 
 * `t_f` = Fox trade post
 * `t_r` = Rabbit trade post
@@ -418,8 +419,8 @@ When the Underground Duchy's revealed cards return to their hand, it's not notat
 * `b_m` = Market
 * `0` = Burrow (Clearing Number)
 
-#### Sway a Minister
-`#<minister name>->$`
+#### Minister Cards
+`#<minister name>`
 * `minister name` = all lower case, no spaces
 
 ### Corvid Conspiracy
@@ -524,6 +525,8 @@ See Cards section above. These abbreviations are not necessary, but can optional
 * `(3w+r)1->12` *Move 3 warriors and the raft from clearing 1 to clearing 12.*
 * `(4Lw+2Lb_r)4->` *Remove 4 Lizard warriors and 2 rabbit gardens from clearing 4.*
 * `R#@*->D` *Moles use Informants to draw an Ambush card at the end of their turn.*
+* `#brigadier->$` *The Underground Duchy sways the Brigadier.*
+* `#brigadierD$->` *The Underground Duchy loses the Brigadier; the price of failure.*
 * `%_d->s+r` *The Vagabond takes An Evening's Rest, repairing and refreshing all damaged items.*
 
 ### Example Sequences
@@ -540,6 +543,7 @@ Common sequences of multiple actions in a row.
 * `#sabo$->/#boatE$->` *The current player activates Saboteurs to discard the Eyrie's Boat Builders.*
 * `R#O->/Pw10->/w->10` *The Riverfolk activate Propaganda Bureau to convert a Corvid warrior.*
 * `XE8/V++/(2w+2Ew)2->` *The Eyrie enlist the Arbiter Vagabond to help them defend.*
+* `#bankO->/w->$` *The Riverfolk use Export to gain a warrior in Payments. Note: Don't use the "craft" notation in this case, since the card isn't added to Crafted Improvements and the item isn't added to the faction board.*
 * `%r->e/CXO12/(2Cw+3Ow)12->/$_O+$_C->h/++3` *The Vagrant Vagabond instigates a battle between the Marquise and the Riverfolk.*
 * `#^P/?Pt3^t_e/#C->P` *The Marquise guesses the Corvids' plot (incorrectly, oh well) using Exposure.*
 * `XC9/R#C->/2Cw9->2/(2w+Cb_s)9->/++` *The Marquise uses Field Hospitals after being attacked.*
@@ -583,8 +587,12 @@ Special thanks to feedback and testing from:
 
 ## Changelog
 
+* Version 2.6 (12 Dec 2020):
+  * Added Riverfolk Export spec and example.
+  * Cleaned up redundant Ministers information and added examples.
+  * Added Spy cards as limitation.
 * Version 2.5 (11 Dec 2020):
-  * Clarified that certain actions can only be notated on certain turns.
+  * Clarified that certain actions can only be notated on certain Factions' turns.
   * Added examples and clarifications throughout.
 * Version 2.4 (7 Dec 2020):
   * Added Field Hospitals spec, to work with Coffin Makers.
