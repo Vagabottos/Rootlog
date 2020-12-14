@@ -8,7 +8,7 @@
 
 Map: Winter
 Deck: E&P
-Clearings: M1, F2, M3, M4, F5, F6, R7, F8, R9, M10, R11, F12
+Clearings: M1, F2, M3, M4, F5, F6, R7, R8, R9, M10, R11, F12
 Pool: CDEAP
 P: Nevakanezah
 D: Carlos
@@ -18,12 +18,12 @@ A: Circvs
 E:b+6w->1/#despot->$
 A:3#->$
 D:t->3/2w->3+7+8+12
-P:w->4+6+8
+P:w->2+4+9 // Moved pieces around after putting them down.
 
 A:(2B+F)#$->/t->2+7+12/++2/Z%h/++2/#->A // A strong start.
 E:B#E->$_r/w->1/2w1->10/b->10/++/#->E
 D:2w->0/XA7/At7->/R#D->A$/++/(R+B)#^/#captain->$/++/#->D
-P:B#P->/w->1+3+4+10/w10->3/w2->/t->2/2w4->/t->4/#->P
+P:B#P->/w->1+3+4+10/w10->4/w2->/t->2/2w4->/t->4/#->P
 
 A:R#$->/t->8/++/#A->$/#->A
 E:Zmurine/R#E->$_m/w->1/4w1->11/4w11->9/b->9/++2/2#->E
@@ -55,7 +55,7 @@ E:F#E->$_x/$_->/--5/#commander->$/2#->E
 D:3w->0/M#D->/b_c->4/3w0->1/XA3M@/2Dw3->/XE12/(w+2Ew)12->/XP8/3Pw8->/2w8->9/w9->4/(2R+F)#^/#banker->$/++2/#->D
 P:B#P->/w->3+4+10/XD3/Dt3->/++/XD12/(w+Dw)12->/w2->/t->2/2#->P
 
-A:2w7->12/w12->8/w7+w8->/t->7+8/++5/3#->A/#->A
+A:2w7->12/w12->8/w12+w8->/t->12+8/++5/3#->A/#->A
 E:M#E->$_m/w8->3/^A/#->A$/w3->7/#->A$/XA7R@/w7->/2#->E
 D:3w->0/R#D->/t+3w0->7/XA7B@/(2w+At)7->/^A/#->A$/++/XA7/Ab_r7->/++/(2R#+2w)$->/F#D->/b_m->4/w8->9/XE9/(w+2Ew)9->/Z%b/#->E/++/2#->D
 P:Z%s/#->E/++2/#->E/Ztun/t2^t_e/#A->P/++3/R#P->/w->7+8/XA3/At3->/#->A$/++/XA8/At8->/#->A$/++/w5->/t->5/3#->P
