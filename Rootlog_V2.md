@@ -520,14 +520,14 @@ See Cards section above. These abbreviations are not necessary, but can optional
 * `#V->C` *The Vagabond gives one unspecified card to the Marquise, for example, in Swap Meet.*
 * `%r->r` *Refresh an undamaged torch.*
 * `%xd->` *Remove an damaged crossbow from play.*
-* `%s12->$` *Take a torch from a ruin. The ruin piece is assumed to be removed when the ruin is empty.*
+* `%s12->$` *Take a sword from a ruin. The ruin piece is assumed to be removed when the ruin is empty.*
 * `w->5+6+12` *Recruit one warrior each to clearings 5, 6, and 12.*
 * `(3w+r)1->12` *Move 3 warriors and the raft from clearing 1 to clearing 12.*
-* `(4Lw+2Lb_r)4->` *Remove 4 Lizard warriors and 2 rabbit gardens from clearing 4.*
-* `R#@*->D` *Moles use Informants to draw an Ambush card at the end of their turn.*
+* `(4Lw+2Lb_r)4->` *Remove 4 Lizard warriors and 2 Rabbit gardens from clearing 4.*
+* `R#@*->A` *The Woodland Alliance uses Informants to draw an Ambush card at the end of their turn.*
 * `#brigadier->$` *The Underground Duchy sways the Brigadier.*
 * `#brigadierD$->` *The Underground Duchy loses the Brigadier; the price of failure.*
-* `%_d->s+r` *The Vagabond takes An Evening's Rest, repairing and refreshing all damaged items.*
+* `%_d->s+r` *The Vagabond takes An Evening's Rest, repairing and refreshing all damaged items. Damaged track items go to the satchel.*
 
 ### Example Sequences
 
@@ -547,7 +547,7 @@ Common sequences of multiple actions in a row.
 * `%r->e/CXO12/(2Cw+3Ow)12->/$_O+$_C->h/++3` *The Vagrant Vagabond instigates a battle between the Marquise and the Riverfolk.*
 * `#^P/?Pt3^t_e/#C->P` *The Marquise guesses the Corvids' plot (incorrectly, oh well) using Exposure.*
 * `XC9/R#C->/2Cw9->2/(2w+Cb_s)9->/++` *The Marquise uses Field Hospitals after being attacked.*
-* `#false$->/3Dw8->9/t9^t_b/3Dw9->` *Corvids play False Orders into a bomb. D:*
+* `#false$->/3Dw8->9/t9^t_b/3Dw9->/++3` *Corvids play False Orders into a bomb. D:*
 
 ### Example Turns
 
@@ -566,7 +566,7 @@ P:w->4+8+9 // Corvids place into the bottom left corner of the board.
 A:3#->$ // Start with 3 supporters.
 
 C:3w->O$/B#O->C/t->2/Zrpart/t2->/b_r->6/++/w->6+10/M#C->/t->2/B#C->/t2->/b_s->3/++/#->C // Buys a Bird card from Riverfolk to Overwork, Recruit, and do two Builds.  
-O:3#->O/w$->5/2w$->/t_r+w->5/++2/$_h->4 // Fill up their card shop, put out a trade post. Cards get more expensive.  
+O:3#->O/w10->5/2w$->/t_r+w->5/++2/$_h->4 // Fill up their card shop, put out a trade post. Cards get more expensive.  
 P:F#P->/w->1+6+12+8/w1->9/2w9->4/w4->/t->4/#->P // One plot goes out.  
 A:3w->O$/B#O->A/3B#$->/t->12+11+9/++2/Zmurine/Zh/++2/2#A->$/#->A // Lucky 3 Bird Supporters stack gives them lots of options.
 ```
