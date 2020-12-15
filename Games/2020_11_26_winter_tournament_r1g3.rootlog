@@ -40,7 +40,7 @@ C:#->C+V/t->1/t1->/b_s->9/++/2w->9/XD9/B#C->/XD9/Dw9->/#->C
 G:%h+%r->r/p->10/%r->e/%h10->$/++/Z%s/++2/%s->e/(Dw+Dt)10->/$_D->h/++2/%r->d/#->G
 V:p->10_11_12/%_d->s+r/2#->V
 
-D:2w->0/B#D->/t+2w0->12/4w12->10/XG10B@/3Dw10->/(%s+%h)G$->d/2M#D->/++2/2F#^/#marshal->$/++/F#D->/6_11->/++/#->D
+D:2w->0/B#D->/t+2w0->12/4w12->10/w3->7/XG10B@/3Dw10->/(%s+%h)G$->d/2M#D->/++2/2F#^/#marshal->$/++/F#D->/6_11->/++/#->D
 C:#->C+V/t->1+9/Z%c/++3/R#C->/2_5->/++/2w9->12/3w9->10/XD12/Dt12->/++/t1+t9->/b_r->12/++2/B#C->/XD10/(Dw+w)10->/2#->C
 G:p->10_11_12/%_d->s+r/#->G
 V:p->11/%h->e/R#V->C/%cC$->$/$_C->1/++/%c->t/%r->e/%s11->$/R#V->/R#dom->V/R#domV->$/++->G$/2%f->e/p->3/%s->e/XD3/(Dw+Dt)3->/%h->d/2#->V/2#V-> // So it begins.
@@ -55,7 +55,7 @@ C:#->C+V/t->1+9/Z%f/++/t1+t9->/b_s->12/++2/2M#C->/2t->12/B#C->/2t12->/b_w->2/++2
 G:%h+%r+%s+%f->r/p->9/%r->e/#royal->G/2%h->e/2#G->C/$_C->1/#->G // Probably aided with Bird cards.
 V:2%x+%r->r/p->11/%f->e/p->12/%r+2%x->e/3#V->C/$_C->2/3#->V // Same here. Also, the actual relationship marker was not moved to 2.
 
-D:2w->0/F#D->/t+4w0->9/w0->9/XC9F@/2w9->/F#C->/2Cw9->1/XC9/2Cb_r->9/++2/3w9->0/R#D->/++/#->D
+D:2w->0/F#D->/t+4w0->9/w0->9/XC9F@/2w9->/F#C->/2Cw9->1/XC9/2Cb_r9->/++2/3w9->0/R#D->/++/#->D
 C:#->C+G/t->1+9+12/Z%f/++/Z%t/++2/t1+t9+t12->/b_w->6/++3/(M+R+B+F)#C->/t->1+9+12/B#C->/t1+t9+t12->/b_s->2/++4
 
 Winner: CGV // Likely the only three-player win we'll see in a Root tournament.
