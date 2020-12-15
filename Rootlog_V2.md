@@ -180,7 +180,7 @@ A term for reference in other syntax. Includes Clearings, Forests, Faction Board
 `3F#$->` *The Woodland Alliance spends 3 Fox supporters.*  
 `#E->A$` *The Eyrie give the Woodland Alliance one supporter.*  
 `%sO$->V$` *The Riverfolk give a sword to the Vagabond.*  
-`%s12->$` *Take a torch from the ruin in clearing 12. The ruin piece is assumed to be removed when the ruin is empty.*  
+`%s12->$` *Take a sword from the ruin in clearing 12. The ruin piece is assumed to be removed when the ruin is empty.*  
 `%s->e` *The current player exhausts a sword.*  
 `%fe->` *The current player removes one of their exhausted boots from play.*  
 
