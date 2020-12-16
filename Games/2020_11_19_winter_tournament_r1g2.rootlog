@@ -42,12 +42,12 @@ E:2F#E->$_r/w->8/4w->5/3w5->4/XG3/%_->d/b->4/$_->/--5/#commander->$/++5/3#->E
 
 G:p->1_9_12/%_d->s+r/#->G
 C:t->6+10+11/Zprop/B#C->/(w+r)12->11/#->C/4w11->5/F#C->/Ew5->/w->5/XE5/(w+Ew)5->/XE5/(Ew+Eb+w)5->/++/w->7+10+11/2#->C
-V:2%f+%s+%h+%x->r/p->8/%f+%s->e/2R#V->E/$_E->2/%f->e/p->10/Z%b/++/%b->t/%x->e/M#C->/Cw10->2/$_C->h/w->2/#->V
+V:2%f+%s+%h+%x->r/p->8/%f+%s->e/2R#V->E/$_E->2/%f->e/p->10/Z%b/++/%b->t/%x->e/M#C->/Cw10->2/$_C->h/p->2/#->V
 E:(R+B)#E->$_r/Zswap/2w->8/3w8->10/XC10/2Cw10->/++4/2#->E/#E-> // They draw 2 but should draw 3, I think.
 
 G:p->9/%f->e/p->3/%h+%r->e/F#Q->$/2%h->e/2#G->C/$_C->2/++2/B#G->/B#dom->G/B#domG->$/++->C$/XE9F@/%r+%h->d/Ew9->/%f->d/#->G
 C:t->6+10+11/2B#C->/R#C->/Ew4->/w->4/3w5->4/3w2->8/XE4/R#C->/2w4->2/(2Ew+Eb)4->/++/XC8B@/(3w+Ew)8->/2w7->2/3w2->8/XE8/(Ew+Eb)8->/++/2#->C
-V:2%f+%s+%h+%x->r/p->7/%s->e/XC7/b_r7->/%h->e/Zsabo/2%f->e/p->11/%x->e/R#C->/Cw11->2/#->V
+V:2%f+%s+%h+%x->r/p->7/%s->e/XC7/Cb_r7->/%h->e/Zsabo/2%f->e/p->11/%x->e/R#C->/Cw11->2/#->V
 E:#C->E/#E->C/M#E->$_r/w->3+9/$_->/--3/++3/#charismatic->$/2#->E
 
 G:%f+3%h+%r->r/%h->e/%fd->s/%f->e/p->8/%h+%s+%tt->s+e/3#G->C/$_C->a/#->G
