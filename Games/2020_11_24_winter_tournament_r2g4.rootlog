@@ -43,10 +43,10 @@ P:Zfalse/#false$->/2Aw9->4/w3->/t->3/4w8->7/2w7->/t->7/t12<->t4 // Exerted.
 A:4F#$->/t->12+6/++3/Z%t/++3/B#A->/w->$/2w4->8/XP8B@/2w8->/w->9/2#->A
 
 C:t->2+3+11/Z%t/++2/#->A/4w2->5/w5->1/^A/#->A$/t2+t3+t11->/b_s->5/++3/XA3/At3->/R#C->A$/++/2#->C
-O:#A->O/#O->A/#->O/2w10->12/2w$->/t_f+w->12/++2/M#O->/Pw7->/w->7/XA12/At12->/#->A$/++/XA6/At6->/#->A$/++/Z%s/++2/#->A/2w$->/t_r+w->7/++2/%s->e/XP7M@/(4w+Pw+Pt)7->/++
+O:#A->O/#O->A/#->O/2w10->12/2w$->/t_f+w->12/++2/M#O->/Pw7->/w->7/XA12/At12->/#->A$/++/XA6/At6->/#->A$/++/Z%s/++2/#->A/2w$->/t_m+w->7/++2/%s->e/XP7M@/(4w+Pw+Pt)7->/++
 P:t3^t_r/++4/R#P->/w->5+3+4+10/XA4/At4->/R#P->A$/++/w12->4/w1->10/w10->/t->10
 A:2R#$->/t->4/++/Z%b/++2/2#A->$/B#A->/w->$/w->9/XC9/2Cw9->/XC9/Cb_r9->/++/2#->A
 
-C:t->5+2+3+11/Z%x/++/#->A/t5+t11+t3->/b_s->5/++4/XP8/Pt8->/++/3w1->10/2t2->/b_r->10/++2/B#C->/XO5/Ot5->/++ // I count 5 actions, and only 1 Bird spent: Build, Battle, Move, Build, Battle. Did I miss a Bird spend?
+C:t->5+2+3+11/Z%x/++/#->A/t5+t11+t3->/b_s->5/++4/XP8/Pt_s8->/++/3w1->10/2t2->/b_r->10/++2/B#C->/XO5/Ot_r5->/++ // I count 5 actions, and only 1 Bird spent: Build, Battle, Move, Build, Battle. Did I miss a Bird spend?
 
 Winner: C // Frequent disconnects didn't stop the winner. :)
