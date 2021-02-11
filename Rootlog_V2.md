@@ -652,7 +652,7 @@ P:w->4+8+9 // Corvids place into the bottom left corner of the board.
 A:3#->$ // Start with 3 supporters.
 
 C:3w->O$/B#O->C/t->2/Zrpart/t2->/b_r->6/++/w->6+10/M#C->/t->2/B#C->/t2->/b_s->3/++/#->C // Buys a Bird card from Riverfolk to Overwork, Recruit, and do two Builds.  
-O:3#->O/w10->5/2w$->/t_r+w->5/++2/$_h->4 // Fill up their card shop, put out a trade post. Cards get more expensive.  
+O:3#->O/w10->5/2w$->/t_r+w->5/++2 // Fill up their card shop, put out a trade post.  
 P:F#P->/w->1+6+12+8/w1->9/2w9->4/w4->/t->4/#->P // One plot goes out.  
 A:3w->O$/B#O->A/3B#$->/t->12+11+9/++2/Zmurine/Zh/++2/2#A->$/#->A // Lucky 3 Bird Supporters stack gives them lots of options.
 ```
