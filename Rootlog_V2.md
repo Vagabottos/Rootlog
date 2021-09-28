@@ -4,7 +4,7 @@ A unified notation system for tracking turn activity in the board game [Root](ht
 
 ## About
 
-This is a WIP. Current version: V2.7 (updated 23 Jan 2021). Questions and Feedback are greatly appreciated.
+This is a WIP. Current version: V2.8 (updated ???). Questions and Feedback are greatly appreciated.
 
 This system is inspired in part by algebraic notation in Chess. It's also inspired by and heavily draws on Nevakanezah's original [Rootlog](https://boardgamegeek.com/thread/2543149/article/36304225) notation.
 
@@ -21,6 +21,8 @@ Future changes will be evaluated based on whether they get Rootlog closer to the
 ## Improvement Space
 
 - Not all Draft systems may be included by this notation.
+- There's no notation for ADSET (Advanced Setup) Draft.
+- There's no notation for hirelings.
 - There's no notation for Spy cards.
 - Ministers do not yet have abbreviations (for instance, `#duchessofmud` takes a bit long to write).
 
@@ -83,6 +85,8 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 - `O` = Riverfolk Company
 - `D` = Underground Duchy
 - `P` = Corvid Conspiracy
+- `H` = Lord of the Hundreds
+- `K` = Keepers in Iron
 
 ### Piece Types
 
@@ -122,7 +126,7 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 - `x` = crossbow ("xbow")
 - `h` = hammer
 - `t` = tea
-- `r` = to"r"ch 
+- `r` = to"r"ch
 - `f` = boot (for "foot")
 
 ### Items
@@ -204,7 +208,7 @@ A term for reference in other syntax. Includes Clearings, Forests, Faction Board
 `F#domO->C` *The Riverfolk give a Fox Dominance card to the Marquise.*  
 `M#E->P` *The Eyrie give a Mouse card to the Corvids.*  
 `#V->C` *The Vagabond gives an unspecified card to the Marquise.*  
-`F#C->` *The Marquise discards an Fox card.*  
+`F#C->` *The Marquise discards a Fox card.*  
 `#->C` *The Marquise draws a card from the deck.*  
 `3#A->$` *The Woodland Alliance mobilizes 3 supporters.*  
 `3F#$->` *The Woodland Alliance spends 3 Fox supporters.*  
@@ -349,6 +353,7 @@ This is a Location.
 #### Discard the Decree, including Viziers and Leader
 
 `$_->`
+
 That is, discard the whole board.  
 
 #### New Leader
@@ -394,7 +399,7 @@ Examples:
 `(%r+%t+%s)d->s` *Repair three items.*  
 `%rde->s` *Repair a damaged, exhausted torch.*  
 `%ct->s` *Move coin from track to satchel.*  
-`%rr->d` *Damage an unexhausted torch.*  
+`%fr->d` *Damage an unexhausted boot.*  
 
 #### Available Quests
 
@@ -420,10 +425,9 @@ This is a Location, on the `Vagabond Faction`'s board above.
 
 ### Riverfolk Company
 
-The following actions can only be notated on the Riverfolk Company's turn:
+The following action can only be notated on the Riverfolk Company's turn:
 
 - Set prices
-- Set funds
 
 Committed funds are not notated, just the actions those funds allow. The Riverfolk's Faction Board is its Funds and Payments. When using Export, *don't* use the craft notation; just discard the card from the Player Hand. Remember: other players buy cards from the Riverfolk's Player Hand, *not* their Faction Board!
 
@@ -530,6 +534,55 @@ Success or failure of the guess is conveyed by the actions that follow (give car
 
 Note: The `<->` in the middle of this action is written as is. For example, `t12<->t4` means that the plots on clearings 4 and 12 switch places.
 
+### Lord of the Hundreds
+
+The following action can only be notated on the Lord of the Hundreds's turn:
+
+- Choose mood
+
+The Lord of the Hundreds's Faction Board is its hoard. Do not notate the mob die roll.
+
+- `w_w` = Warlord warrior
+
+#### Choose Mood
+
+`#<mood name>->$`
+
+- `mood name` = all lower case, no spaces
+
+### Keepers in Iron
+
+The following actions can only be notated on the Keepers in Iron's turn:
+
+- Add cards to the retinue
+- Move cards in the retinue
+- Remove cards from the retinue
+- Reveal relic token's point value
+
+The Keepers in Iron's Faction Board is its relics.
+
+- `t_f` = Figure relic token
+- `t_t` = Tablet relic token
+- `t_j` = Jewelry relic token
+- `b_f` = Waystation building, figure side up
+- `b_t` = Waystation building, tablet side up
+- `b_j` = Waystation building, jewelry side up
+- `#faith` or `B#faith` = Faithful retainer card
+
+#### Retinue Locations
+
+`$_<Number>`
+
+- `Number` = Position of the Retinue column: `1`, `2`, or `3`; `1` is leftmost, `3` is rightmost.
+
+#### Reveal Relic Token's Point Value
+
+`<relic token><Clearing>^<Number>`
+
+- `Number` = Number of points the relic is worth.
+
+Notate this after a delve when the relic token is flipped face up.
+
 ## Card Name Abbreviations (Optional)
 
 See Cards section above. These abbreviations are not necessary, but can optionally be used in place of the full card name.
@@ -608,6 +661,7 @@ See Cards section above. These abbreviations are not necessary, but can optional
 - `%xd->` *Remove an damaged crossbow from play.*
 - `%s12->$` *Take a sword from a ruin. The ruin piece is assumed to be removed when the ruin is empty.*
 - `w->5+6+12` *Recruit one warrior each to clearings 5, 6, and 12.*
+- `b_j->12` *Keepers build a waystation.*
 - `(3w+r)1->12` *Move 3 warriors and the raft from clearing 1 to clearing 12.*
 - `(4Lw+2Lb_r)4->` *Remove 4 Lizard warriors and 2 Rabbit gardens from clearing 4.*
 - `R#@*->A` *The Woodland Alliance uses Informants to draw an Ambush card at the end of their turn.*
@@ -626,11 +680,15 @@ Common sequences of multiple actions in a row.
 - `XP12/Pt12^t_r/w->4+7+9+10/++` *The current player attacks and removes a Corvid Raid plot token.*
 - `3Cw->O$/B#saboO->C` *The Marquise buys a Bird card from the Riverfolk.*
 - `2R#$->/(2Cw+Cb_s+Dw)3->/++/b_r+w->3/w->$` *The Woodland Alliance revolts in a Rabbit clearing with Marquise and Duchy pieces.*
+- `XK9/2Kw9->/Kt_f9->2_3_7_12/$_K->h/++4` *The Vagabond removes a defended relic in battle.*
+- `w12->/w_w->12` - *The Hundreds anoint a new Warlord.*
 - `#sabo$->/#boatE$->` *The current player activates Saboteurs to discard the Eyrie's Boat Builders.*
 - `R#O->/Pw10->/w->10` *The Riverfolk activate Propaganda Bureau to convert a Corvid warrior.*
-- `XE8/V++/(2w+2Ew)2->` *The Eyrie enlist the Arbiter Vagabond to help them defend.*
+- `XE8/V++/(3w+2Ew)8->` *The Eyrie enlist the Arbiter Vagabond to help them defend.*
 - `#bankO->/w->$` *The Riverfolk use Export to gain a warrior in Payments. Note: Don't use the "craft" notation in this case, since the card isn't added to Crafted Improvements and the item isn't added to the faction board.*
 - `%r->e/CXO12/(2Cw+3Ow)12->/$_O+$_C->h/++3` *The Vagrant Vagabond instigates a battle between the Marquise and the Riverfolk.*
+- `t_t7_10_11->10/t_t10^2/#faith$_2->` - *The Keepers delve a relic (possibly foolishly).*
+- `t_f5->$/++5` - *The Keepers recover a 3 point relic which also completes a relic column.*
 - `#^P/?Pt3^t_e/#C->P` *The Marquise guesses the Corvids' plot (incorrectly, oh well) using Exposure.*
 - `XC9/R#C->/2Cw9->2/(2w+Cb_s)9->/++` *The Marquise uses Field Hospitals after being attacked.*
 - `#false$->/3Dw8->9/t9^t_b/3Dw9->/++3` *Corvids play False Orders into a bomb. D:*
