@@ -1,4 +1,5 @@
 # Rootlog
+
 A notation system for the board game [Root](https://ledergames.com/products/root-a-game-of-woodland-might-and-right) by Leder Games, and a collection of notated games.
 
 ## Rootlog Notation

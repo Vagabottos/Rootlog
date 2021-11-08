@@ -4,7 +4,7 @@ A unified notation system for tracking turn activity in the board game [Root](ht
 
 ## About
 
-This is a WIP. Current version: V2.8 (updated ???). Questions and Feedback are greatly appreciated.
+This is a WIP. Current version: V2.8 (updated 8 Nov 2021). Questions and Feedback are greatly appreciated.
 
 This system is inspired in part by algebraic notation in Chess. It's also inspired by and heavily draws on Nevakanezah's original [Rootlog](https://boardgamegeek.com/thread/2543149/article/36304225) notation.
 
@@ -21,10 +21,8 @@ Future changes will be evaluated based on whether they get Rootlog closer to the
 ## Improvement Space
 
 - Not all Draft systems may be included by this notation.
-- There's no notation for ADSET (Advanced Setup) Draft.
-- There's no notation for hirelings.
 - There's no notation for Spy cards.
-- Ministers do not yet have abbreviations (for instance, `#duchessofmud` takes a bit long to write).
+- Ministers do not yet have abbreviations (for example, `#duchessofmud` takes a bit long to write).
 
 ## General Syntax
 
@@ -52,20 +50,37 @@ This syntax is at the beginning of each line that represents a turn, not on its 
 
 `Winner: <Factions...>`
 
-### Game Setup (including Draft, if any)
+### Game Setup (Standard and ADSET)
 
 The following lines must be included at the beginning of the notation, in the order they're shown here.
 
 `Map: <Map Name>`  
 `Deck: <Deck Name>`  
 `[Clearings: <Suit>1, <Suit>2... <Suit>12]` *This records the clearing suits. Omitted only on the Fall map.*  
-`[Pool: <Faction 1>[Faction 2...]]` *Include this line if players will Draft from a limited pool of factions.*  
-`<Faction>: <Player Name>` *Repeat this line once for each player, in order of draft, if relevant.*
+`[Landmarks: <Landmark 1 Setup>[/Landmark 2 Setup]]` *Include only in ADSET if landmarks are used. If omitted, default setup is assumed (ferry for Lake, tower for Mountain)*  
+`[Hirelings: <Hireling 1>, <Hireling 2>, <Hireling 3>[/Hireling Setup...]]` *Include only in ADSET if hirelings are used. Don't notate which player set them up.*  
+`[Pool: <Faction 1>[Faction 2...]]` *Include only in ADSET or if players will Draft from a limited pool of factions.*  
+`<Faction>: <Player Name>` *Repeat this line once for each player in draft order, if applicable. In ADSET, each player's "Setup" turn comes on the line immediately after this line.*
 
-- `Map Name` = `Fall`, `Winter`, `Lake`, or `Mountain`  
-- `Deck Name` = `Standard` or `E&P`  
+- `Map Name` = `Fall`, `Winter`, `Lake`, or `Mountain`
+- `Deck Name` = `Standard` or `E&P`
 
-Record faction setup steps using game notation. Each faction takes a "Setup" turn (in the notation), so the first turn recorded can always be read as the setup.
+Record faction setup steps using game notation. Notate faction setup as a "turn," so the first turn recorded can always be read as the setup.
+
+#### Landmark Setup
+
+`<Landmark>-><Clearing>`
+
+Don't notate who placed the Landmark. It can be included in comments if desired.
+
+##### Landmarks
+
+- `treetop` = Elder Treetop
+- `city` = Lost City
+- `market` = Black Market
+- `forge` = Legendary Forge
+- `ferry` or `f` = Ferry
+- `tower` = Tower
 
 ### Suits
 
@@ -88,13 +103,43 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 - `H` = Lord of the Hundreds
 - `K` = Keepers in Iron
 
+### Hirelings
+
+Hirelings can be used as Factions for notation. Do not notate who controls the hireling when moving its pieces. It's never a hireling's turn. A hireling's faction board is its card.
+
+`h_<Hireling Type>[d]`
+
+- `d` = If present, hireling is demoted. Can be omitted after the setup step.
+
+#### Hireling Types
+
+- `C` = Forest Patrol/Feline Physicians  *(have warriors)*
+- `E` = Last Dynasty/Bluebird Nobles *(have warriors)*
+- `A` = Spring Uprising/Rabbit Scouts *(have warriors, don't notate die)*
+- `V` = The Outcast/The Brigand *(has pawn, clubs are items)*
+- `L` = Warm Sun Prophets/Lizard Envoys *(have warriors)*
+- `O` = Riverfolk Flotilla/Otter Divers *(has pawn)*
+- `D` = Sunward Expedition/Mole Artisans *(have warriors and tokens)*
+- `P` = Corvid Spies/Raven Guards *(have warriors)*
+- `H` = Flame Bearers/Rat Ravagers *(have warriors)*
+- `K` = Vault Keepers/Badger Bodyguards *(have warriors and buildings)*
+- `T` = Highway Bandits/Bandit Guilds *(have warriors)*
+- `S` = Furious Protector/Stoic Protector *(has pawn)*
+- `J` = Woodland Band/Traveling Band *(have warriors)*
+
+#### Hiring a Hireling
+
+`<Hireling>-><Faction Board>[Number]`
+
+- `Number` = Number of control markers the new controller gains. If omitted, it's not included.
+
 ### Piece Types
 
 - `w` = warrior
 - `p` = pawn
 - `b` = building
 - `t` = token
-- `r` = raft (Lake map only)
+- `f` = ferry (Lake map only)
 
 ### Pieces
 
@@ -128,6 +173,7 @@ Record faction setup steps using game notation. Each faction takes a "Setup" tur
 - `t` = tea
 - `r` = to"r"ch
 - `f` = boot (for "foot")
+- `u` = cl"u"b
 
 ### Items
 
@@ -172,7 +218,7 @@ For all players, Crafted Improvement cards are on their Faction Board.
 
 ### Locations
 
-A term for reference in other syntax. Includes Clearings, Forests, Faction Boards, Player Hands, Item States, and other locations named under Special Faction Syntax.
+A term for reference in other syntax. Includes Clearings, Forests, Faction Boards, Player Hands, Item States, Paths, and other locations named under Special Faction Syntax.
 
 ### Battles
 
@@ -309,12 +355,16 @@ Group combined things together to make them easier to track, both when writing a
 
 - `Faction Board` = The faction board your VP token is moving to.
 
-### Closed Path Marker (Mountain Map only)
+### Paths and Closed Paths
 
-`<Lower Clearing>_<Higher Clearing>->`
+`<Lower Clearing>_<Higher Clearing>`
 
-- `Lower Clearing` = The lower number of the two clearings adjacent to the Closed Path.
-- `Higher Clearing` = The higher number of the two clearings adjacent to the Closed Path.
+- `Lower Clearing` = The lower number of the two clearings adjacent to the Path or Closed Path.
+- `Higher Clearing` = The higher number of the two clearings adjacent to the Path or Closed Path.
+
+#### Remove Closed Path
+
+`<Closed Path>->`
 
 ## Special Faction Syntax
 
@@ -557,31 +607,39 @@ The following actions can only be notated on the Keepers in Iron's turn:
 - Add cards to the retinue
 - Move cards in the retinue
 - Remove cards from the retinue
-- Reveal relic token's point value
+- Flip relic token
 
-The Keepers in Iron's Faction Board is its relics.
+The Keepers in Iron's Faction Board is its Relics.
 
 - `t_f` = Figure relic token
 - `t_t` = Tablet relic token
 - `t_j` = Jewelry relic token
-- `b_f` = Waystation building, figure side up
-- `b_t` = Waystation building, tablet side up
-- `b_j` = Waystation building, jewelry side up
-- `#faith` or `B#faith` = Faithful retainer card
+- `b_f` = Waystation, figure side up
+- `b_t` = Waystation, tablet side up
+- `b_j` = Waystation, jewelry side up
+- `#faith` or `B#faith` = Faithful retainer card (when they're removed from the game, notate that they're discarded)
 
 #### Retinue Locations
 
 `$_<Number>`
 
-- `Number` = Position of the Retinue column: `1`, `2`, or `3`; `1` is leftmost, `3` is rightmost.
+- `Number` = Position of the Retinue column: `1`, `2`, or `3`; `1` is leftmost, `3` is rightmost
 
-#### Reveal Relic Token's Point Value
+#### Flip Relic Token
 
 `<relic token><Clearing>^<Number>`
 
-- `Number` = Number of points the relic is worth.
+- `Number` = Number of points the relic is worth
 
-Notate this after a delve when the relic token is flipped face up.
+Notate this after a delve when the relic token is flipped point value side up.
+
+#### Optional Relic Notation
+
+`<relic token>[_<Number>]`
+
+- `Number`= Number of points the relic is worth
+
+When clarification is needed–for example, when more than one flipped relic of the same type is in the same clearing or forest–flipped relics may be notated in this way instead.
 
 ## Card Name Abbreviations (Optional)
 
@@ -661,7 +719,9 @@ See Cards section above. These abbreviations are not necessary, but can optional
 - `%xd->` *Remove an damaged crossbow from play.*
 - `%s12->$` *Take a sword from a ruin. The ruin piece is assumed to be removed when the ruin is empty.*
 - `w->5+6+12` *Recruit one warrior each to clearings 5, 6, and 12.*
-- `b_j->12` *Keepers build a waystation.*
+- `h_E->A$4` *The Woodland Alliance hire the Last Dynasty hireling for the next four turns.*
+- `%uh_V$->` *The Outcast loses a club.*
+- `b_j->12` *The Keepers in Iron build a waystation.*
 - `(3w+r)1->12` *Move 3 warriors and the raft from clearing 1 to clearing 12.*
 - `(4Lw+2Lb_r)4->` *Remove 4 Lizard warriors and 2 Rabbit gardens from clearing 4.*
 - `R#@*->A` *The Woodland Alliance uses Informants to draw an Ambush card at the end of their turn.*
@@ -685,9 +745,11 @@ Common sequences of multiple actions in a row.
 - `#sabo$->/#boatE$->` *The current player activates Saboteurs to discard the Eyrie's Boat Builders.*
 - `R#O->/Pw10->/w->10` *The Riverfolk activate Propaganda Bureau to convert a Corvid warrior.*
 - `XE8/V++/(3w+2Ew)8->` *The Eyrie enlist the Arbiter Vagabond to help them defend.*
+- `Sp->9/(w+Ew+Lw)9->` *Furious Protector comes into town.*
 - `#bankO->/w->$` *The Riverfolk use Export to gain a warrior in Payments. Note: Don't use the "craft" notation in this case, since the card isn't added to Crafted Improvements and the item isn't added to the faction board.*
 - `%r->e/CXO12/(2Cw+3Ow)12->/$_O+$_C->h/++3` *The Vagrant Vagabond instigates a battle between the Marquise and the Riverfolk.*
 - `t_t7_10_11->10/t_t10^2/#faith$_2->` - *The Keepers delve a relic (possibly foolishly).*
+- `h_Op->4/h_OXD4/3Dw4->` *The Flotilla battles the Duchy.*
 - `t_f5->$/++5` - *The Keepers recover a 3 point relic which also completes a relic column.*
 - `#^P/?Pt3^t_e/#C->P` *The Marquise guesses the Corvids' plot (incorrectly, oh well) using Exposure.*
 - `XC9/R#C->/2Cw9->2/(2w+Cb_s)9->/++` *The Marquise uses Field Hospitals after being attacked.*
@@ -732,6 +794,14 @@ Special thanks to feedback and testing from:
 
 ## Changelog
 
+- Version 2.8 (8 Nov 2021):
+  - BREAKING CHANGE: Changed ferry piece notation from `r` to `f` (and updated included notated games)
+  - Added Lord Of Hundreds faction
+  - Added Keepers In Iron faction
+  - Added Hireling notation
+  - Added Landmark notation
+  - Added ADSET notation
+  - Added Path notation (for Highway Bandits)
 - Version 2.7 (23 Jan 2021):
   - Added Corvid Bomb plot spec
 - Version 2.6 (12 Dec 2020):
