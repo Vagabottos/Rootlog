@@ -614,6 +614,12 @@ The Keepers in Iron's Faction Board is its Relics.
 - `t_f` = Figure relic token
 - `t_t` = Tablet relic token
 - `t_j` = Jewelry relic token
+- `t_1_f` = Figure relic token worth 1 point
+- `t_2_t` = Tablet relic token worth 2 points
+- `t_3_j` = Jewelry relic token worth 3 points
+- `b_f` = Waystation, figure side up
+- `b_t` = Waystation, tablet side up
+- `b_j` = Waystation, jewelry side up
 - `b_f_t` = Waystation, figure side up, tablet side down
 - `b_t_j` = Waystation, tablet side up, jewelry side down
 - `b_j_f` = Waystation, jewelry side up, figure side down
@@ -627,7 +633,7 @@ The Keepers in Iron's Faction Board is its Relics.
 
 #### Flip Relic Token
 
-`<relic token><Clearing>^<Number>`
+`t<Clearing>^t_<Number>_<relic type>`
 
 - `Number` = Number of points the relic is worth
 
@@ -635,7 +641,7 @@ Notate this after a delve when the relic token is flipped point value side up.
 
 #### Optional Relic Notation
 
-`<relic token>[_<Number>]`
+`t[_<Number>]_<relic type>`
 
 - `Number`= Number of points the relic is worth
 
