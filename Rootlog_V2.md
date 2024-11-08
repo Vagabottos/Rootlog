@@ -88,6 +88,7 @@ Don't notate who placed the Landmark. It can be included in comments if desired.
 - `F` = Fox
 - `M` = Mouse
 - `R` = Rabbit
+- `G` = Frog
 
 ### Factions
 
@@ -102,6 +103,9 @@ Don't notate who placed the Landmark. It can be included in comments if desired.
 - `P` = Corvid Conspiracy
 - `H` = Lord of the Hundreds
 - `K` = Keepers in Iron
+- `F` = Lilypad Diaspora
+- `T` = Twilight Council
+- `N` = Knaves of the Deepwood
 
 ### Hirelings
 
@@ -641,6 +645,109 @@ Notate this after a delve when the relic token is flipped point value side up.
 
 When clarification is needed–for example, when more than one flipped relic of the same type is in the same clearing or forest–flipped relics may be notated in this way instead.
 
+### Lilypad Diaspora
+
+The Diaspora's faction pieces are warriors,
+
+#### Frog Tokens
+
+Frog tokens come in three suits (Fox, Mouse, Rabbit), have two sides (Peaceful and Militant).
+They can cover the printed suit of a clearing.
+
+`t_<side>[_<suit>]`
+
+where `side` is one of:
+- `p`: Peaceful
+- `m`: Militant
+
+#### Flip Frog Token
+
+`t_<side><Clearing>^`
+
+When flipping from Militant to Peaceful, it is implicit that the token uncovers the printed suit of the clearing.
+
+When flipping a Frog token during an opponent's turn, specify the faction.
+
+`Ft_p2^`
+
+**Special case: Anger**
+When the Diaspora anger a suit, all tokens of that suit are flipped to their militant side, even on their board.
+
+`t_p_<suit>^`
+
+#### Covering the Printed Suit of a Clearing
+
+`t<Clearing>c`
+
+#### Frog Cards
+
+Frog cards are drawn from and discarded to the Frog deck.
+They have their own distinctive card back, which means that their suit can and must always be specified.
+
+`G#->D`: The Duchy selects a Frog card from the Frog deck.
+`G#E->F`: The Eyrie gives the Diaspora a Frog card.
+`G#A->`: The Alliance discard a Frog card, back to the Frog deck.
+
+Frog card abbreviations:
+
+- `flab`/`mlab`/`rlab` = Fox/Mouse/Rabbit Laborers
+- `peace` = Peace Talks
+- `incite` = Incite Conflict
+
+Frog Ambush (G#@) and Frog Dominance (G#dom) use the same notation as their counterparts from other suits.
+
+### Twilight Council
+
+The Council's faction pieces are warriors, communes (`b`), assemblies (`t`) and edicts.
+
+The Council allows all factions to perform a new action, convening an assembly, that replaces battling.
+
+#### Convening an Assembly
+
+- Declare assembly, choosing defender: `[<attacker>]c<defender><Clearing>`
+- Flip assembly: `t<Clearing>^`
+- Roll dice: `r<attacker's roll><defender's roll>`
+- Modify attacker's dice: `ra=<Number>`
+- Modify defender's dice: `rd=<Number>`
+- Deal hits using the usual notation
+
+#### Edict cards
+
+- `intens` = Intensify Pacifism
+- `might` = Might Makes Right
+- `awake` = Awaken the People
+- `threats` = Pacify Threats
+- `debates` = Overtime Debates
+- `canvas[s]` = Canvass Support
+- `rouse` = Rouse Loyalists
+
+When playing Rouse Loyalists, the card spent is tucked under it.
+This can be notated by using the card as a location.
+
+`#rouse->$/B#boat->#rouse`
+
+### Knaves of the Deepwood
+
+The Knaves' faction pieces are warriors (`w`), three captains (`w_a`, `w_b`, `w_c`) and hideouts (`b`).
+There is also a special piece which is treated as a faction board location: the Item Bag (`$_i`).
+
+#### Setup
+
+During setup, the Knaves must choose three Vagabond characters and assign them their captains which take action in the same order every turn.
+
+`#<character>->$_<captain>`
+
+Where `<character>` the name of one of the Vagabond characters, and `<captain>` is one of `a`, `b` or `c`.
+
+#### Taking Hostages and Items
+
+The captain locations (`$_a`, `$_b`, `$_c`) are also used as locations for warriors taken as hostages and for items carried by captains.
+
+`%s$_i->$_a`: Captain A draws a sword from the item bag.
+`Dw2->$_b`: Captain B takes a Duchy warrior from clearing 2 hostage.
+`%x$_c->`: Captain C uses and discards a crossbow.
+`Fw$_a->3`: Captain A releases a Diaspora hostage to clearing 3.
+
 ## Card Name Abbreviations (Optional)
 
 See Cards section above. These abbreviations are not necessary, but can optionally be used in place of the full card name.
@@ -794,6 +901,8 @@ Special thanks to feedback and testing from:
 
 ## Changelog
 
+- Version 2.9 (???):
+  - Added Homeland expansion factions
 - Version 2.8 (8 Nov 2021):
   - BREAKING CHANGE: Changed ferry piece notation from `r` to `f` (and updated included notated games)
   - Added Lord Of Hundreds faction
