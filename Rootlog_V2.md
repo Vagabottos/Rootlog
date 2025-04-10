@@ -614,9 +614,15 @@ The Keepers in Iron's Faction Board is its Relics.
 - `t_f` = Figure relic token
 - `t_t` = Tablet relic token
 - `t_j` = Jewelry relic token
+- `t_1_f` = Figure relic token worth 1 point
+- `t_2_t` = Tablet relic token worth 2 points
+- `t_3_j` = Jewelry relic token worth 3 points
 - `b_f` = Waystation, figure side up
 - `b_t` = Waystation, tablet side up
 - `b_j` = Waystation, jewelry side up
+- `b_f_t` = Waystation, figure side up, tablet side down
+- `b_t_j` = Waystation, tablet side up, jewelry side down
+- `b_j_f` = Waystation, jewelry side up, figure side down
 - `#faith` or `B#faith` = Faithful retainer card (when they're removed from the game, notate that they're discarded)
 
 #### Retinue Locations
@@ -627,7 +633,7 @@ The Keepers in Iron's Faction Board is its Relics.
 
 #### Flip Relic Token
 
-`<relic token><Clearing>^<Number>`
+`t<Clearing>^t_<Number>_<relic type>`
 
 - `Number` = Number of points the relic is worth
 
@@ -635,7 +641,7 @@ Notate this after a delve when the relic token is flipped point value side up.
 
 #### Optional Relic Notation
 
-`<relic token>[_<Number>]`
+`t[_<Number>]_<relic type>`
 
 - `Number`= Number of points the relic is worth
 
@@ -721,7 +727,7 @@ See Cards section above. These abbreviations are not necessary, but can optional
 - `w->5+6+12` *Recruit one warrior each to clearings 5, 6, and 12.*
 - `h_E->A$4` *The Woodland Alliance hire the Last Dynasty hireling for the next four turns.*
 - `%uh_V$->` *The Outcast loses a club.*
-- `b_j->12` *The Keepers in Iron build a waystation.*
+- `b_j_t->12` *The Keepers in Iron build a waystation.*
 - `(3w+r)1->12` *Move 3 warriors and the raft from clearing 1 to clearing 12.*
 - `(4Lw+2Lb_r)4->` *Remove 4 Lizard warriors and 2 Rabbit gardens from clearing 4.*
 - `R#@*->A` *The Woodland Alliance uses Informants to draw an Ambush card at the end of their turn.*
@@ -748,9 +754,9 @@ Common sequences of multiple actions in a row.
 - `Sp->9/(w+Ew+Lw)9->` *Furious Protector comes into town.*
 - `#bankO->/w->$` *The Riverfolk use Export to gain a warrior in Payments. Note: Don't use the "craft" notation in this case, since the card isn't added to Crafted Improvements and the item isn't added to the faction board.*
 - `%r->e/CXO12/(2Cw+3Ow)12->/$_O+$_C->h/++3` *The Vagrant Vagabond instigates a battle between the Marquise and the Riverfolk.*
-- `t_t7_10_11->10/t_t10^2/#faith$_2->` - *The Keepers delve a relic (possibly foolishly).*
+- `t_t7_10_11->10/t10^t_2_t/#faith$_2->` - *The Keepers delve a relic (possibly foolishly).*
 - `h_Op->4/h_OXD4/3Dw4->` *The Flotilla battles the Duchy.*
-- `t_f5->$/++5` - *The Keepers recover a 3 point relic which also completes a relic column.*
+- `t_3_f5->$/++5` - *The Keepers recover a 3 point relic which also completes a relic column.*
 - `#^P/?Pt3^t_e/#C->P` *The Marquise guesses the Corvids' plot (incorrectly, oh well) using Exposure.*
 - `XC9/R#C->/2Cw9->2/(2w+Cb_s)9->/++` *The Marquise uses Field Hospitals after being attacked.*
 - `#false$->/3Dw8->9/t9^t_b/3Dw9->/++3` *Corvids play False Orders into a bomb. D:*
